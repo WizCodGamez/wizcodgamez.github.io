@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WizCod Gamez</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">WizCod Gamez</a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games...">
+            </div>
+        </div>
+        <div class="toggleMenu"></div>
+    </header>
+
+    <!-- Home Banner -->
+    <div class="banner">
+        <div class="bg">
+            <div class="content">
+                <h2>"Keep calm and game on"</h2>
+                <p>Check our collection of games</p>
+                <a href="#" class="btn">Check it now</a>
+            </div>
+            <img src="Logo_512.png">
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+        <div class="contentBx">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis temporibus vitae debitis earum velit nihil corporis eligendi tenetur deserunt accusantium in quasi saepe tempora, delectus obcaecati vero nobis error.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero exercitationem qui quibusdam harum dolorem sequi? Nisi ullam tempore, nesciunt corporis adipisci, sequi provident vero minima, amet incidunt quas ipsa?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum numquam exercitationem voluptatem laudantium, commodi et, dolores culpa perspiciatis ipsam reprehenderit repellat eaque expedita esse accusamus voluptas. Sit praesentium dolor eveniet?
+            </p>
+            <a href="#">Read more</a>
+        </div>
+        <img src="Logo_512.png">
+    </div>
+    
+    <!-- Game -->
+    <div class="games">
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list active">All</li>
+            <li class="list">PC Games</li>
+            <li class="list">Mobile Games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="pc">
+                <img src="TossTheEggNew.png">
+                <div class="content">
+                    <h4>Game Name</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Pricing<br><span>Free</span></p>
+                        <a href="#">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        /* Sticky NavBar */
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+    </script>
+
+</body>
+</html>
