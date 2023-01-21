@@ -1,0 +1,294 @@
+@font-face {
+    font-family: "Amsterdam Four";
+    src: url('Amsterdam Four_ttf_400.ttf');
+    src: url('Amsterdam Four_ttf_400.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: #ffffff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar
+{
+    width: 8px;
+}
+::-webkit-scrollbar-track
+{
+    background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #f78da7;
+    border-radius: 0px;
+}
+
+/*
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header.sticky
+{
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo
+{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: "Amsterdam Four", sans-serif;
+    white-space: nowrap;
+}
+
+header .nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a
+{
+    color: #f78da7;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover
+{
+    background: #f78da7;
+    color: #ffffff;
+    box-shadow: 0 0 10px #f78da7;
+    border-radius: 50px;
+}
+
+header .action .searchBx
+{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+header .action .searchBx ::placeholder
+{
+    color: #626262;
+}
+
+header .action .searchBx i
+{
+    font-size: 2em;
+    margin: 5px;
+    color: #f78da7;
+}
+
+
+header .action .searchBx input
+{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #f78da7;
+}
+
+*/
+
+/* Home Banner */
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banner .bg
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content
+{
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2
+{
+    font-size: 3em;
+    color: #000000;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: "Amsterdam Four";
+    white-space: nowrap;
+}
+
+.banner .bg .content p
+{
+    font-size: 1em;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a
+{
+    display: inline-block;
+    padding: 17px 30px;
+    margin: 20px 0px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    height: 60px;
+    color: #fff;
+    background-color: #f78da7;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover
+{
+    padding: 17px 30px;
+    margin: 20px 0px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    height: 60px;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #f78da7;
+    box-shadow: 0 0 20px #f78da7;
+}
+
+.banner .bg img
+{
+    width: 600px;
+}
+
+
+
+/* Privacy Section */
+
+.privacy
+{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+}
+
+.privacy .contentBx
+{
+    width: 100%;
+    margin: 250px;
+}
+
+.privacy .contentBx h1
+{
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #f78da7;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.privacy .contentBx h2
+{
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #f78da7;
+    margin-bottom: 5px;
+    margin-top: 80px;
+}
+
+.privacy .contentBx hr
+{
+    border: 0.5px solid #f78da7;
+    border-radius: 0px;
+}
+
+.privacy .contentBx .info
+{
+    font-size: 20px;
+}
+
+.privacy .contentBx .info li
+{
+    margin-left: 65px;
+}
+
+.privacy .contentBx a
+{
+    padding: 17px 30px;
+    margin: 60px 0;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    height: 60px;
+    color: #fff;
+    background-color: #f78da7;
+    letter-spacing: 1px;
+}
+
+.privacy .contentBx a:hover
+{
+    padding: 17px 30px;
+    margin: 20px 0px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    height: 60px;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #f78da7;
+    box-shadow: 0 0 20px #f78da7;
+}
