@@ -500,7 +500,7 @@ header .action .searchBx input
     outline: none;
     padding: 10px;
     width: 100%;
-    color: #fff;
+    color: black;
     background-color: #f78da848;
     min-height: 15px;
     font-size: 1.1em;
@@ -510,6 +510,7 @@ header .action .searchBx input
 .contact .form .inputBx textarea
 {
     height: 150px;
+    resize: none;
 }
 
 .contact .form .inputBx input[type="submit"]
