@@ -636,13 +636,13 @@ footer .info ul li:hover a i
 .animeX
 {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(120px);
     opacity: 0;
     transition: all 2s ease;
 }
 .animeX.active
 {
-    transform: translateY(0px);
+    transform: translateY(100px);
     opacity: 1;
 }
 

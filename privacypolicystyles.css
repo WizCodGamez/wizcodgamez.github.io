@@ -232,7 +232,8 @@ header .action .searchBx input
 .privacy .contentBx
 {
     width: 100%;
-    margin: 250px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .privacy .contentBx h1
@@ -296,4 +297,128 @@ header .action .searchBx input
     background-color: #f78da7;
     box-shadow: 0 0 20px #f78da7;
     transition: all .3s ease-in-out 0s;
+}
+
+/* Footer Section */
+
+footer
+{
+    padding: 10px 100px;
+    transition: 0.5s;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info .logo
+{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: "Amsterdam Four", sans-serif;
+    white-space: nowrap;
+}
+
+footer .info p
+{
+    color:  rgb(0, 0, 0);
+}
+
+footer .info ul
+{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li
+{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f78da7;
+    cursor: pointer;
+}
+
+footer .info ul li:hover
+{
+    background-color: #f78da7;
+    border: none;
+    box-shadow: 0 0 10px #f78da7;
+    transform: scale(1.25);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+footer .info ul li a i
+{
+    font-size: 1.5em;
+    color:#f78da7;
+}
+
+footer .info ul li:hover a i
+{
+    color: #fff;
+}
+
+.animeP
+{
+    position: relative;
+    transform: translateY(120px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animeP.active
+{
+    transform: translateY(100px);
+    opacity: 1;
+}
+
+/* Responsive Design */
+
+@media (max-width: 991px)
+{
+    .banner
+    {
+        flex-direction: column;
+    }
+    .banner .bg img
+    {
+        position: absolute;
+        width: 300px;
+        margin-bottom: 450px;
+    }
+    .banner .bg .content
+    {
+        width: 100%;
+        height: 100%;
+        background-color: none;
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .privacy
+    {
+        flex-direction: column;
+    }
+    .privacy .contentBx .info
+    {
+        width: 100%;
+        height: 100%;
+    }
 }

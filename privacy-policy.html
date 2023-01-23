@@ -18,13 +18,13 @@
                 <p>Welcome to WizCod Gamez Privacy Policy Page</p>
                 <a href="#info" class="btn">Read More</a>
             </div>
-            <img src="Logo_1920_new.png">
+            <img src="Logo_1920.png">
         </div>
     </div>
     
     <!-- About -->
-    <div class="privacy">
-        <div class="contentBx"  id="info">
+    <div class="privacy animeP">
+        <div class="contentBx" id="info">
             <h1>Privacy Policy</h1>
             <hr>
             <div class="info">
@@ -142,5 +142,43 @@
             <br><a href="index.html">Home</a>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="info">
+            <a href="#home" class="logo">WizCod Gamez</a>
+            <p><i class='bx bx-copyright' ></i>2023 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-pinterest' ></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        /* Scrolling Animation Effects */
+        window.addEventListener('scroll',function(){
+            var anime = document.querySelectorAll('.animeP');
+
+            for(var s = 0; s < anime.length; s++)
+            {
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+
+                if(animetop < windowheight - animepoint)
+                {
+                    anime[s].classList.add('active');
+                }
+                else
+                {
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+    </script>
 </body>
 </html>
