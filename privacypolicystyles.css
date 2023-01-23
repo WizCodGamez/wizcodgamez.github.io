@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body
@@ -189,6 +190,7 @@ header .action .searchBx input
     color: #fff;
     background-color: #f78da7;
     letter-spacing: 1px;
+    transition: all .3s ease-in-out 0s;
 }
 
 .banner .bg .content a:hover
@@ -203,6 +205,7 @@ header .action .searchBx input
     letter-spacing: 1px;
     background-color: #f78da7;
     box-shadow: 0 0 20px #f78da7;
+    transition: all .3s ease-in-out 0s;
 }
 
 .banner .bg img
@@ -277,6 +280,7 @@ header .action .searchBx input
     color: #fff;
     background-color: #f78da7;
     letter-spacing: 1px;
+    transition: all .3s ease-in-out 0s;
 }
 
 .privacy .contentBx a:hover
@@ -291,4 +295,5 @@ header .action .searchBx input
     letter-spacing: 1px;
     background-color: #f78da7;
     box-shadow: 0 0 20px #f78da7;
+    transition: all .3s ease-in-out 0s;
 }

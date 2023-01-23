@@ -13,6 +13,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body
@@ -86,7 +87,8 @@ header ul li a
     color: #f78da7;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
+    white-space: nowrap;
 }
 
 header ul li a:hover
@@ -185,10 +187,12 @@ header .action .searchBx input
     font-weight: 500;
     border-radius: 50px;
     height: 60px;
-    color: #fff;
-    background-color: #f78da7;
+    color: #f78da7;
+    background-color: #fff;
     letter-spacing: 1px;
     white-space: nowrap;
+    border: 1px solid #f78da7;
+    transition: all .3s ease-in-out 0s;
 }
 
 .banner .bg .content a:hover
@@ -204,6 +208,7 @@ header .action .searchBx input
     background-color: #f78da7;
     box-shadow: 0 0 20px #f78da7;
     white-space: nowrap;
+    transition: all .3s ease-in-out 0s;
 }
 
 .banner .bg img
@@ -425,7 +430,7 @@ header .action .searchBx input
 {
     display: inline-block;
     padding: 17px 30px;
-    margin: 20px 0px;
+    margin: 10px 0px;
     text-decoration: none;
     font-weight: 500;
     border-radius: 50px;
@@ -433,6 +438,7 @@ header .action .searchBx input
     color: #fff;
     background-color: #f78da7;
     letter-spacing: 1px;
+    transition: all .3s ease-in-out 0s;
 }
 
 .games .cardBx .card .info  a:hover
@@ -447,6 +453,7 @@ header .action .searchBx input
     letter-spacing: 1px;
     background-color: #f78da7;
     box-shadow: 0 0 20px #f78da7;
+    transition: all .3s ease-in-out 0s;
 }
 
 .games .cardBx .card.hide
@@ -519,13 +526,223 @@ header .action .searchBx input
     padding: 10px 20px;
     margin: 15px 0;
     outline: none;
-    background-color: transparent;
+    background-color: #ffffff;
+    border: 1px solid #ff245b;
+    text-decoration: none;
+    font-weight: 300;
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    color:#ff245b;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out 0s;
+
+}
+
+.contact .form .inputBx input[type="submit"]:hover
+{
+    color: #fff;
+    box-shadow: 0 0 20px #f78da7;
+    outline: none;
+    background-color: #f78da7;
     border: 1px solid #f78da7;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 300;
     width: 150px;
+    height: 60px;
     border-radius: 50px;
-    color: #ff245b;
-    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out 0s;
+}
 
+/* Footer Section */
+
+footer
+{
+    padding: 10px 100px;
+    transition: 0.5s;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info .logo
+{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: "Amsterdam Four", sans-serif;
+    white-space: nowrap;
+}
+
+footer .info p
+{
+    color:  rgb(0, 0, 0);
+}
+
+footer .info ul
+{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li
+{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f78da7;
+    cursor: pointer;
+}
+
+footer .info ul li:hover
+{
+    background-color: #f78da7;
+    border: none;
+    box-shadow: 0 0 10px #f78da7;
+    transform: scale(1.25);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+footer .info ul li a i
+{
+    font-size: 1.5em;
+    color:#f78da7;
+}
+
+footer .info ul li:hover a i
+{
+    color: #fff;
+}
+
+.animeX
+{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.animeX.active
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Responsive Design */
+
+@media (max-width: 991px)
+{
+    header
+    {
+        padding: 15px 40px;
+    }
+    header .nav
+    {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    header .nav.active
+    {
+        display: flex;
+    }
+    header .nav li
+    {
+        margin: 20px 0;
+    }
+    header .nav li a
+    {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu
+    {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-image: url(menu.png);
+        background-position: center;
+        background-size: 50px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .toggleMenu.active
+    {
+        background-image: url(close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50px;
+    }
+    .banner .bg img
+    {
+        position: absolute;
+
+    }
+    .banner .bg .content
+    {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.500);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .about
+    {
+        flex-direction: column;
+    }
+    .about .contentBx
+    {
+        width: 100%;
+    }
+    .contact
+    {
+        flex-direction: column;
+    }
+    .contact img
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .contact .form
+    {
+        width: 100%;
+        margin: 30px;
+        padding: 10px;
+    }
+    .contact .form h1
+    {
+        text-align: center;
+    }
+    footer .info
+    {
+        flex-direction: column;
+    }
 }
