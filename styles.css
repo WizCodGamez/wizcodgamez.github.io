@@ -755,4 +755,8 @@ footer .info ul li:hover a i
     {
         flex-direction: column;
     }
+    footer .info p
+    {
+        white-space: nowrap;
+    }
 }
