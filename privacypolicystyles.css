@@ -331,7 +331,6 @@ footer .info .logo
 footer .info p
 {
     color:  rgb(0, 0, 0);
-    white-space: nowrap;
 }
 
 footer .info ul
@@ -401,8 +400,9 @@ footer .info ul li:hover a i
     .banner .bg img
     {
         position: absolute;
-        width: 300px;
-        margin-bottom: 450px;
+        width: 50%;
+        height: auto;
+        margin-bottom: 450px
     }
     .banner .bg .content
     {
@@ -412,6 +412,52 @@ footer .info ul li:hover a i
         padding: 20px;
         z-index: 1;
         border-radius: 10px;
+    }
+    .banner .bg .content h2 {
+        font-size: 5vw;
+        color: #000000;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-family: "Amsterdam Four";
+        white-space: nowrap;
+        text-align: center;
+        margin-top: 20%;
+    }
+    .banner .bg .content p {
+        font-size: 1.75vw;
+        color: #000000;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .banner .bg .content a {
+        display: inline-block;
+        padding: 17px 30px;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: 60px;
+        color: #fff;
+        background-color: #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+    }
+    .banner .bg .content a:hover
+    {
+        display: inline-block;
+        padding: 17px 30px;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 50px;
+        height: 60px;
+        color: #fff;
+        letter-spacing: 1px;
+        background-color: #f78da7;
+        box-shadow: 0 0 20px #f78da7;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
     }
     .privacy
     {
