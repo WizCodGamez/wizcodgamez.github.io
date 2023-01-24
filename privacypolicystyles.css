@@ -331,6 +331,7 @@ footer .info .logo
 footer .info p
 {
     color:  rgb(0, 0, 0);
+    white-space: nowrap;
 }
 
 footer .info ul
