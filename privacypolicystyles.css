@@ -400,9 +400,10 @@ footer .info ul li:hover a i
     .banner .bg img
     {
         position: absolute;
-        width: 50%;
+        width: 60vw;
         height: auto;
-        margin-bottom: 50vw;
+        margin-bottom: 65vw;
+        margin-top: 20vw;
     }
     .banner .bg .content
     {
@@ -421,7 +422,7 @@ footer .info ul li:hover a i
         font-family: "Amsterdam Four";
         white-space: nowrap;
         text-align: center;
-        margin-top: 10vw;
+        margin-top: 40vw;
     }
     .banner .bg .content p {
         font-size: 1.75vw;
@@ -468,9 +469,53 @@ footer .info ul li:hover a i
     {
         flex-direction: column;
     }
+    .privacy .contentBx h1
+    {
+        font-size: 4vw;
+    }
     .privacy .contentBx .info
     {
         width: 100%;
         height: 100%;
+        font-size: 2vw;
+    }
+    .privacy .contentBx .info li
+    {
+        margin-left: 5vw;
+    }
+    .privacy .contentBx a {
+        font-size: 1.7vw;
+        padding: 1.85vw 2.9vw;
+        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: auto;
+        color: #fff;
+        background-color: #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        text-align: center;
+        width: fit-content;
+    }
+    .privacy .contentBx a:hover
+    {
+        font-size: 1.7vw;
+        padding: 1.85vw 2.9vw;
+        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 50px;
+        height: auto;
+        color: #fff;
+        background-color: #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        text-align: center;
+        width: fit-content;
     }
 }
