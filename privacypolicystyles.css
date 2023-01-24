@@ -518,4 +518,8 @@ footer .info ul li:hover a i
         text-align: center;
         width: fit-content;
     }
+    footer .info
+    {
+        flex-direction: column;
+    }
 }
