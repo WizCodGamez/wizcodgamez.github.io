@@ -402,7 +402,7 @@ footer .info ul li:hover a i
         position: absolute;
         width: 50%;
         height: auto;
-        margin-bottom: 450px
+        margin-bottom: 50vw;
     }
     .banner .bg .content
     {
@@ -421,7 +421,7 @@ footer .info ul li:hover a i
         font-family: "Amsterdam Four";
         white-space: nowrap;
         text-align: center;
-        margin-top: 20%;
+        margin-top: 10vw;
     }
     .banner .bg .content p {
         font-size: 1.75vw;
@@ -430,34 +430,39 @@ footer .info ul li:hover a i
         text-align: center;
     }
     .banner .bg .content a {
-        display: inline-block;
-        padding: 17px 30px;
+        font-size: 1.7vw;
+        padding: 1.85vw 2.9vw;
+        display: block;
         margin: 20px auto;
         text-decoration: none;
         font-weight: 500;
         border-radius: 50px;
-        height: 60px;
+        height: auto;
         color: #fff;
         background-color: #f78da7;
         letter-spacing: 1px;
         transition: all .3s ease-in-out 0s;
         white-space: nowrap;
+        text-align: center;
+        width: fit-content;
     }
     .banner .bg .content a:hover
     {
-        display: inline-block;
-        padding: 17px 30px;
+        font-size: 1.7vw;
+        padding: 1.85vw 2.9vw;
+        display: block;
         margin: 20px auto;
         text-decoration: none;
         font-weight: 700;
         border-radius: 50px;
-        height: 60px;
+        height: auto;
         color: #fff;
-        letter-spacing: 1px;
         background-color: #f78da7;
-        box-shadow: 0 0 20px #f78da7;
+        letter-spacing: 1px;
         transition: all .3s ease-in-out 0s;
         white-space: nowrap;
+        text-align: center;
+        width: fit-content;
     }
     .privacy
     {
