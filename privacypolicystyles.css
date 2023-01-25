@@ -36,7 +36,6 @@ body
     border-radius: 0px;
 }
 
-/*
 header
 {
     position: fixed;
@@ -47,9 +46,10 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
     transition: 0.5s;
     z-index: 1000;
+    background-color: #fff;
 }
 
 header.sticky
@@ -87,7 +87,8 @@ header ul li a
     color: #f78da7;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 50px;
+    white-space: nowrap;
 }
 
 header ul li a:hover
@@ -128,9 +129,10 @@ header .action .searchBx input
     border: none;
     font-size: 1em;
     color: #f78da7;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    background-color: transparent;
 }
-
-*/
 
 /* Home Banner */
 
@@ -394,6 +396,114 @@ footer .info ul li:hover a i
 
 @media (max-width: 991px)
 {
+
+    /* Header Section */
+    header
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5vw 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 1000;
+        background-color: #fff;
+    }
+    header .logo
+    {
+        position: relative;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 4vw;
+        font-weight: 300;
+        font-family: "Amsterdam Four", sans-serif;
+        white-space: nowrap;
+    }
+    header .nav
+    {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    header .nav.active
+    {
+        display: flex;
+    }
+    header .nav li
+    {
+        margin: 20px 0;
+    }
+    header .nav li a
+    {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    header .action .searchBx
+    {
+        padding: 1vw;
+        margin: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 5px;
+    }
+    header .action .searchBx ::placeholder
+    {
+        color: #626262;
+    }
+
+    header .action .searchBx i
+    {
+        font-size: 5vw;
+        margin: 5px;
+        color: #f78da7;
+    }
+
+    header .action .searchBx input
+    {
+        outline: none;
+        border: none;
+        font-size: 3vw;
+        color: #f78da7;
+        background-color: transparent;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
+    .toggleMenu
+    {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-image: url(menu.png);
+        background-position: center;
+        background-size: 6vw;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .toggleMenu.active
+    {
+        background-image: url(close.png);
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 6vw;
+        cursor: pointer;
+    }
+
     /* Banner Sections */
     .banner
     {

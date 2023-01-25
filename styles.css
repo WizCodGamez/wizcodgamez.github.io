@@ -757,6 +757,7 @@ footer .info ul li:hover a i
         background-size: 6vw;
         cursor: pointer;
     }
+
     /* Banner Sections */
     .banner
     {
@@ -787,18 +788,24 @@ footer .info ul li:hover a i
         font-family: "Poppins", sans-serif;
         white-space: nowrap;
         text-align: center;
-        margin-top: 50vw;
+        margin-top: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .banner .bg .content p {
         font-size: 2vw;
         color: #000000;
         letter-spacing: 1px;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
     }
     .banner .bg .content a {
         font-size: 2.5vw;
         padding: 1.85vw 2.9vw;
-        display: block;
         margin: 20px auto;
         text-decoration: none;
         font-weight: 500;
@@ -806,20 +813,22 @@ footer .info ul li:hover a i
         height: auto;
         color: #f78da7;
         background-color: #fff;
+        border: 1px solid #f78da7;
         letter-spacing: 1px;
         transition: all .3s ease-in-out 0s;
         white-space: nowrap;
-        text-align: center;
         width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .banner .bg .content a:hover
     {
         font-size: 2.5vw;
         padding: 1.85vw 2.9vw;
-        display: block;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 500;
         border-radius: 50px;
         height: auto;
         color: #fff;
@@ -827,8 +836,10 @@ footer .info ul li:hover a i
         letter-spacing: 1px;
         transition: all .3s ease-in-out 0s;
         white-space: nowrap;
-        text-align: center;
         width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .about
     {

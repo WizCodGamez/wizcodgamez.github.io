@@ -9,7 +9,26 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+    <header>
+        <a href="#" class="logo">WizCod Gamez</a>
+        <ul class="nav">
+            <li><a href="index.html #home">Home</a></li>
+            <li><a href="index.html #about">About Us</a></li>
+            <li><a href="index.html #games">Games</a></li>
+            <li><a href="index.html #">Projects</a></li>
+            <li><a href="index.html #contact-us">Contact Us</a></li>
+        </ul>
+        <!--
+        <div class="action">
+            <div class="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Games...                  ">
+            </div>
+        </div>
+        -->
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
     <!-- Home Banner -->
     <div class="banner">
         <div class="bg">
@@ -159,6 +178,21 @@
     </footer>
 
     <script>
+        /* Sticky NavBar */
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+
+        /* Responsive Nav Bar */
+        function toggleMenu()
+        {
+             const toggleMenu = document.querySelector('.toggleMenu');
+             const nav = document.querySelector('.nav');
+             toggleMenu.classList.toggle('active')
+             nav.classList.toggle('active')
+        }
+
         /* Scrolling Animation Effects */
         window.addEventListener('scroll',function(){
             var anime = document.querySelectorAll('.animeP');
