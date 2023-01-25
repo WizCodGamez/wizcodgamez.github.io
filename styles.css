@@ -490,7 +490,7 @@ header .action .searchBx input
 
 .contact .form h1
 {
-    color: #f78da7;
+    color: #000000;
 }
 
 .contact .form .inputBx
@@ -539,7 +539,7 @@ header .action .searchBx input
     color:#ff245b;
     letter-spacing: 1px;
     transition: all .3s ease-in-out 0s;
-
+    margin-bottom: 100px;
 }
 
 .contact .form .inputBx input[type="submit"]:hover
@@ -557,6 +557,7 @@ header .action .searchBx input
     text-decoration: none;
     cursor: pointer;
     transition: all .3s ease-in-out 0s;
+    margin-bottom: 100px;
 }
 
 /* Footer Section */
@@ -872,7 +873,7 @@ footer .info ul li:hover a i
     {
         font-size: 10vw;
         font-weight: 700;
-        color: #f78da7;
+        color: #000000;
         white-space: nowrap;
         display: flex;
         align-items: center;
@@ -954,7 +955,7 @@ footer .info ul li:hover a i
     {
         font-size: 10vw;
         font-weight: 700;
-        color: #f78da7;
+        color: #000000;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1152,7 +1153,7 @@ footer .info ul li:hover a i
     {
         font-size: 10vw;
         font-weight: 700;
-        color: #f78da7;
+        color: #000000;
         white-space: nowrap;
         display: flex;
         align-items: center;

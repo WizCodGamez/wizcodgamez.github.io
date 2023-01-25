@@ -9,8 +9,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
     <header>
-        <a href="#" class="logo">WizCod Gamez</a>
+        <a href="index.html#home" class="logo">WizCod Gamez</a>
         <ul class="nav">
             <li><a href="index.html#home">Home</a></li>
             <li><a href="index.html#about">About Us</a></li>
@@ -28,12 +31,11 @@
         -->
         <div class="toggleMenu" onclick="toggleMenu();"></div>
     </header>
-
     <!-- Home Banner -->
     <div class="banner">
         <div class="bg">
             <div class="content">
-                <h2>“Welcome to WizCod Gamez <br>Privacy Policy”</h2>
+                <h2>WizCod Gamez<br>Privacy Policy</h2>
                 <p></p>
                 <a href="#full-info" class="btn">Read More</a>
             </div>
@@ -176,7 +178,7 @@
             </ul>
         </div>
     </footer>
-
+    <script src="privacypolicyScript.js"></script>
     <script>
         /* Sticky NavBar */
         window.addEventListener('scroll',function(){
@@ -212,7 +214,7 @@
                     anime[s].classList.remove('active');
                 }
             }
-        })
+        });
     </script>
 </body>
 </html>

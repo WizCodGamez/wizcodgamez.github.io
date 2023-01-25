@@ -36,6 +36,33 @@ body
     border-radius: 0px;
 }
 
+#progress
+{
+    position: fixed;
+    bottom: 150px;
+    right:10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #f78da7;
+    cursor: pointer;
+}
+#progress-value
+{
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 35px;
+    color: #f78da7;
+    cursor: pointer;
+}
+
 header
 {
     position: fixed;
@@ -169,7 +196,7 @@ header .action .searchBx input
     color: #000000;
     letter-spacing: 1px;
     font-weight: 300;
-    font-family: "Amsterdam Four";
+    font-family: 'Poppins', sans-serif;
     white-space: nowrap;
 }
 
@@ -178,7 +205,7 @@ header .action .searchBx input
     font-size: 1em;
     color: #000000;
     letter-spacing: 1px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
 }
 
 .banner .bg .content a
@@ -190,10 +217,12 @@ header .action .searchBx input
     font-weight: 500;
     border-radius: 50px;
     height: 60px;
-    color: #fff;
-    background-color: #f78da7;
+    color: #f78da7;
+    background-color: #fff;
+    border: 1px solid #f78da7;
     letter-spacing: 1px;
     transition: all .3s ease-in-out 0s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .banner .bg .content a:hover
@@ -208,7 +237,9 @@ header .action .searchBx input
     letter-spacing: 1px;
     background-color: #f78da7;
     box-shadow: 0 0 20px #f78da7;
+    border: 1px solid #f78da7;
     transition: all .3s ease-in-out 0s;
+    font-family: 'Poppins', sans-serif;
 }
 
 .banner .bg img
@@ -246,6 +277,7 @@ header .action .searchBx input
     color: #f78da7;
     margin-bottom: 5px;
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .privacy .contentBx h2
@@ -266,6 +298,7 @@ header .action .searchBx input
 .privacy .contentBx .info
 {
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .privacy .contentBx .info li
@@ -281,25 +314,37 @@ header .action .searchBx input
     font-weight: 500;
     border-radius: 50px;
     height: 60px;
-    color: #fff;
-    background-color: #f78da7;
+    color: #f78da7;
+    background-color: #fff;
+    border: 1px solid #f78da7;
     letter-spacing: 1px;
     transition: all .3s ease-in-out 0s;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
 }
 
 .privacy .contentBx a:hover
 {
     padding: 17px 30px;
-    margin: 20px 0px;
+    margin: 60px 0;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 50px;
     height: 60px;
     color: #fff;
-    letter-spacing: 1px;
     background-color: #f78da7;
-    box-shadow: 0 0 20px #f78da7;
+    border: 1px solid #f78da7;
+    letter-spacing: 1px;
     transition: all .3s ease-in-out 0s;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
 }
 
 /* Footer Section */
@@ -538,7 +583,7 @@ footer .info ul li:hover a i
         color: #000000;
         letter-spacing: 1px;
         font-weight: 300;
-        font-family: "Poppins", sans-serif;
+        font-family: Poppins;
         white-space: nowrap;
         text-align: center;
         margin-top: 30vh;
