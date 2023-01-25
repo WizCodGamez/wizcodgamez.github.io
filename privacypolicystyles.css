@@ -424,18 +424,44 @@ footer .info ul li:hover a i
         font-family: "Amsterdam Four", sans-serif;
         white-space: nowrap;
         text-align: center;
-        margin-top: 50vw;
+        margin-top: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .banner .bg .content p {
         font-size: 2vw;
         color: #000000;
         letter-spacing: 1px;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
     }
     .banner .bg .content a {
         font-size: 2.5vw;
         padding: 1.85vw 2.9vw;
-        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: auto;
+        color: #f78da7;
+        background-color: #fff;
+        border: 1px solid #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner .bg .content a:hover
+    {
+        font-size: 2.5vw;
+        padding: 1.85vw 2.9vw;
         margin: 20px auto;
         text-decoration: none;
         font-weight: 500;
@@ -446,26 +472,10 @@ footer .info ul li:hover a i
         letter-spacing: 1px;
         transition: all .3s ease-in-out 0s;
         white-space: nowrap;
-        text-align: center;
         width: fit-content;
-    }
-    .banner .bg .content a:hover
-    {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
-        display: block;
-        margin: 20px auto;
-        text-decoration: none;
-        font-weight: 700;
-        border-radius: 50px;
-        height: auto;
-        color: #fff;
-        background-color: #f78da7;
-        letter-spacing: 1px;
-        transition: all .3s ease-in-out 0s;
-        white-space: nowrap;
-        text-align: center;
-        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Main Privacy Policy */
@@ -507,9 +517,28 @@ footer .info ul li:hover a i
     }
  
     .privacy .contentBx a {
-        font-size: 1.7vw;
+        font-size: 2.5vw;
         padding: 1.85vw 2.9vw;
-        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: auto;
+        color: #f78da7;
+        background-color: #fff;
+        border: 1px solid #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .privacy .contentBx a:hover
+    {
+        font-size: 2.5vw;
+        padding: 1.85vw 2.9vw;
         margin: 20px auto;
         text-decoration: none;
         font-weight: 500;
@@ -520,26 +549,10 @@ footer .info ul li:hover a i
         letter-spacing: 1px;
         transition: all .3s ease-in-out 0s;
         white-space: nowrap;
-        text-align: center;
         width: fit-content;
-    }
-    .privacy .contentBx a:hover
-    {
-        font-size: 1.7vw;
-        padding: 1.85vw 2.9vw;
-        display: block;
-        margin: 20px auto;
-        text-decoration: none;
-        font-weight: 700;
-        border-radius: 50px;
-        height: auto;
-        color: #fff;
-        background-color: #f78da7;
-        letter-spacing: 1px;
-        transition: all .3s ease-in-out 0s;
-        white-space: nowrap;
-        text-align: center;
-        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Footer Section */
