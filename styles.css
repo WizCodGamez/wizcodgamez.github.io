@@ -761,7 +761,14 @@ footer .info ul li:hover a i
     /* Banner Sections */
     .banner
     {
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        min-height: 75vh;
+        padding: 0px 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .banner .bg img
     {
@@ -841,18 +848,92 @@ footer .info ul li:hover a i
         align-items: center;
         justify-content: center;
     }
+
+    /* About Section */
     .about
     {
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        min-height: 75vh;
+        padding: 0px 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .about .contentBx
     {
         width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .about .contentBx h2
+    {
+        font-size: 10vw;
+        font-weight: 700;
+        color: black;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about .contentBx p
+    {
+        font-size: 4vw;
+        text-align: justify;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .about .contentBx a
+    {
+        font-size: 2.5vw;
+        padding: 1.85vw 2.9vw;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: auto;
+        color: #f78da7;
+        background-color: #fff;
+        border: 1px solid #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .contentBx a:hover
+    {
+        font-size: 2.5vw;
+        padding: 1.85vw 2.9vw;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: auto;
+        color: #fff;
+        background-color: #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .about img
     {
-        width: 100%;
-        height: 100%;
+        width: 90vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .contact
     {
