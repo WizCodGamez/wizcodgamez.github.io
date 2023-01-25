@@ -557,7 +557,7 @@ footer .info ul li:hover a i
         white-space: nowrap;
     }
     .banner .bg .content a {
-        font-size: 4vw;
+        font-size: 3vw;
         padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
@@ -577,7 +577,7 @@ footer .info ul li:hover a i
     }
     .banner .bg .content a:hover
     {
-        font-size: 4vw;
+        font-size: 3vw;
         padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
