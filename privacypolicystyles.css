@@ -408,7 +408,7 @@ footer .info ul li:hover a i
     .banner .bg .content
     {
         width: 100%;
-        height: 100%;
+        height: 50%;
         background-color: none;
         padding: 20px;
         z-index: 1;
@@ -468,6 +468,13 @@ footer .info ul li:hover a i
     .privacy
     {
         flex-direction: column;
+        width: 100%;
+        min-height: 75vh;
+        padding: 0px 10vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: justify;
     }
     .privacy .contentBx h1
     {
@@ -477,7 +484,7 @@ footer .info ul li:hover a i
     {
         width: 100%;
         height: 100%;
-        font-size: 2.5vw;
+        font-size: 2vw;
     }
     .privacy .contentBx .info li
     {
