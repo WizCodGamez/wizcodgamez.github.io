@@ -50,6 +50,7 @@ header
     /*background-color: #ffffff;*/
     transition: 0.5s;
     z-index: 1000;
+    background-color: #fff;
 }
 
 header.sticky
@@ -131,6 +132,7 @@ header .action .searchBx input
     color: #f78da7;
     text-decoration: underline;
     text-underline-offset: 5px;
+    background-color: transparent;
 }
 
 
@@ -662,6 +664,7 @@ footer .info ul li:hover a i
         align-items: center;
         transition: 0.5s;
         z-index: 1000;
+        background-color: #fff;
     }
     header .logo
     {
@@ -728,6 +731,7 @@ footer .info ul li:hover a i
         border: none;
         font-size: 3vw;
         color: #f78da7;
+        background-color: transparent;
         text-decoration: underline;
         text-underline-offset: 5px;
     }
