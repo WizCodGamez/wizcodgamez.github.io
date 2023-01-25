@@ -507,7 +507,14 @@ footer .info ul li:hover a i
     /* Banner Sections */
     .banner
     {
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        min-height: 75vh;
+        padding: 0px 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .banner .bg img
     {
@@ -531,7 +538,7 @@ footer .info ul li:hover a i
         color: #000000;
         letter-spacing: 1px;
         font-weight: 300;
-        font-family: "Amsterdam Four", sans-serif;
+        font-family: "Poppins", sans-serif;
         white-space: nowrap;
         text-align: center;
         margin-top: 30vh;
@@ -550,11 +557,11 @@ footer .info ul li:hover a i
         white-space: nowrap;
     }
     .banner .bg .content a {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 4vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #f78da7;
@@ -570,11 +577,11 @@ footer .info ul li:hover a i
     }
     .banner .bg .content a:hover
     {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 4vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #fff;
@@ -627,11 +634,11 @@ footer .info ul li:hover a i
     }
  
     .privacy .contentBx a {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 3vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #f78da7;
@@ -647,11 +654,11 @@ footer .info ul li:hover a i
     }
     .privacy .contentBx a:hover
     {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 3vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #fff;
