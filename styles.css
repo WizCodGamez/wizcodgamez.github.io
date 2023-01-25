@@ -710,6 +710,27 @@ footer .info ul li:hover a i
         background-color: transparent;
         border-radius: 5px;
     }
+    header .action .searchBx ::placeholder
+    {
+        color: #626262;
+    }
+
+    header .action .searchBx i
+    {
+        font-size: 5vw;
+        margin: 5px;
+        color: #f78da7;
+    }
+
+    header .action .searchBx input
+    {
+        outline: none;
+        border: none;
+        font-size: 3vw;
+        color: #f78da7;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
     .toggleMenu
     {
         position: relative;
@@ -725,10 +746,14 @@ footer .info ul li:hover a i
     .toggleMenu.active
     {
         background-image: url(close.png);
+        width: 50px;
+        height: 50px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 50px;
+        background-size: 6vw;
+        cursor: pointer;
     }
+    /* Banner Sections */
     .banner
     {
         flex-direction: column;
@@ -736,8 +761,10 @@ footer .info ul li:hover a i
     .banner .bg img
     {
         position: absolute;
-        width: 300px;
-        margin-bottom: 450px;
+        width: 70vw;
+        height: auto;
+        margin-bottom: 65vw;
+        margin-top: 20vw;
     }
     .banner .bg .content
     {
@@ -747,6 +774,57 @@ footer .info ul li:hover a i
         padding: 20px;
         z-index: 1;
         border-radius: 10px;
+    }
+    .banner .bg .content h2 {
+        font-size: 5vw;
+        color: #000000;
+        letter-spacing: 1px;
+        font-weight: 300;
+        font-family: "Poppins", sans-serif;
+        white-space: nowrap;
+        text-align: center;
+        margin-top: 50vw;
+    }
+    .banner .bg .content p {
+        font-size: 2vw;
+        color: #000000;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .banner .bg .content a {
+        font-size: 2.5vw;
+        padding: 1.85vw 2.9vw;
+        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: auto;
+        color: #f78da7;
+        background-color: #fff;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        text-align: center;
+        width: fit-content;
+    }
+    .banner .bg .content a:hover
+    {
+        font-size: 2.5vw;
+        padding: 1.85vw 2.9vw;
+        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 50px;
+        height: auto;
+        color: #fff;
+        background-color: #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        text-align: center;
+        width: fit-content;
     }
     .about
     {
