@@ -934,6 +934,7 @@ footer .info ul li:hover a i
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20vh;
     }
     .contact
     {
