@@ -463,6 +463,7 @@ header .action .searchBx input
     display: none;
 }
 
+/* Contact Section*/
 .contact
 {
     padding: 20px 100px;
@@ -811,11 +812,11 @@ footer .info ul li:hover a i
         white-space: nowrap;
     }
     .banner .bg .content a {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 4vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #f78da7;
@@ -831,11 +832,11 @@ footer .info ul li:hover a i
     }
     .banner .bg .content a:hover
     {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 4vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #fff;
@@ -889,11 +890,11 @@ footer .info ul li:hover a i
     }
     .about .contentBx a
     {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 4vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #f78da7;
@@ -910,11 +911,11 @@ footer .info ul li:hover a i
 
     .about .contentBx a:hover
     {
-        font-size: 2.5vw;
-        padding: 1.85vw 2.9vw;
+        font-size: 4vw;
+        padding: 3vw 5vw;
         margin: 20px auto;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 300;
         border-radius: 50px;
         height: auto;
         color: #fff;
@@ -936,24 +937,295 @@ footer .info ul li:hover a i
         justify-content: center;
         margin-bottom: 20vh;
     }
+
+    /* Games Section  --------- Need formatting*/
+    .games
+    {
+        padding: 0px 100px;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 40px auto;
+    }
+
+    .games h2
+    {
+        color: rgb(0, 0, 0);
+        margin: 10px 0;
+    }
+
+    .games ul
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .games ul li
+    {
+        list-style: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin: 5px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        color: black;
+    }
+
+    .games ul li.active
+    {
+        background-color: #f78da7;
+        color: white;
+        box-shadow: 0 0 10px #f78da7;
+    }
+
+    .games .cardBx
+    {
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .games .cardBx .card
+    {
+        width: 280px;
+        border-radius: 25px;
+        margin: 20px 40px;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        box-shadow: 0 0 10px #0000005d;
+    }
+
+    .games .cardBx .card img
+    {
+        width: 100%;
+        height: 250px;
+        object-fit:cover;
+    }
+
+    .games .cardBx .card .content
+    {
+        padding: 10px;
+    }
+
+    .games .cardBx .card .content h4
+    {
+        color: rgb(0, 0, 0);
+        font-weight: 300;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .games .cardBx .card .progress-line
+    {
+        position: relative;
+        height: 10px;
+        width: 100%;
+        background: #f78da7;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    }
+
+    .games .cardBx .card .progress-line span
+    {
+        position: relative;
+        height: 100%;
+        width: 80%;
+        border-radius: 10px;
+        background: #f78da7;
+        box-shadow: 0 0 10px #f78da7;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    }
+
+    @keyframes animate
+    {
+        100%
+        {
+            transform: scaleX(1);
+        }
+    }
+
+    .games .cardBx .card .info
+    {
+        border-top: 2px solid #ff245b;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .games .cardBx .card .info p
+    {
+        font-size: 1em;
+        color: rgb(0, 0, 0);
+    }
+
+    .games .cardBx .card .info p span
+    {
+        color: #f78da7;
+    }
+
+    .games .cardBx .card .info a
+    {
+        display: inline-block;
+        padding: 17px 30px;
+        margin: 10px 0px;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 50px;
+        height: 60px;
+        color: #fff;
+        background-color: #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+    }
+
+    .games .cardBx .card .info  a:hover
+    {
+        padding: 17px 30px;
+        margin: 20px 0px;
+        text-decoration: none;
+        font-weight: 700;
+        border-radius: 50px;
+        height: 60px;
+        color: #fff;
+        letter-spacing: 1px;
+        background-color: #f78da7;
+        box-shadow: 0 0 20px #f78da7;
+        transition: all .3s ease-in-out 0s;
+    }
+
+    .games .cardBx .card.hide
+    {
+        display: none;
+    }
+
+    /* Contact Section --------- Currently formatting*/
     .contact
     {
+        display: flex;
         flex-direction: column;
+        width: 100%;
+        min-height: 75vh;
+        padding: 0px 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .contact img
     {
-        width: 100%;
-        height: 100%;
+        width: 70vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -10vh;
     }
     .contact .form
     {
         width: 100%;
-        margin: 30px;
-        padding: 10px;
+        margin-top: 100px;
+        margin-bottom: 10px;
     }
     .contact .form h1
     {
-        text-align: center;
+        font-size: 10vw;
+        font-weight: 700;
+        color: #f78da7;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .form .inputBx
+    {
+        margin: 10px 0;
+    }
+    .contact .form .inputBx p
+    {
+        color: #ff245b;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        white-space: nowrap;
+        font-size: 4vw;
+    }
+    .contact .form .inputBx input,
+    .contact .form .inputBx textarea
+    {
+        border: none;
+        outline: none;
+        padding: 10px;
+        width: 100%;
+        color: black;
+        background-color: #f78da848;
+        min-height: 15px;
+        font-size: 4vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .form .inputBx textarea
+    {
+        height: 20vh;
+        resize: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .form .inputBx input[type="submit"]
+    {
+        font-size: 4vw;
+        padding: 3vw 5vw;
+        font-weight: 300;
+        border-radius: 50px;
+        margin: 20px auto;
+        text-decoration: none;
+        height: auto;
+        color: #f78da7;
+        background-color: #fff;
+        border: 1px solid #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20vh;
+    }
+    .contact .form .inputBx input[type="submit"]:hover
+    {
+        font-size: 4vw;
+        padding: 3vw 5vw;
+        font-weight: 300;
+        border-radius: 50px;
+        margin: 20px auto;
+        text-decoration: none;
+        height: auto;
+        color: #fff;
+        background-color: #f78da7;
+        letter-spacing: 1px;
+        transition: all .3s ease-in-out 0s;
+        white-space: nowrap;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20vh;
     }
     
     /* Footer Section */
