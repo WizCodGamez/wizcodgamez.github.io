@@ -415,11 +415,11 @@ footer .info ul li:hover a i
         border-radius: 10px;
     }
     .banner .bg .content h2 {
-        font-size: 6vw;
+        font-size: 5vw;
         color: #000000;
         letter-spacing: 1px;
         font-weight: 300;
-        font-family: "Amsterdam Four";
+        font-family: "Amsterdam Four", sans-serif;
         white-space: nowrap;
         text-align: center;
         margin-top: 50vw;
@@ -477,7 +477,7 @@ footer .info ul li:hover a i
     {
         width: 100%;
         height: 100%;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
     .privacy .contentBx .info li
     {
