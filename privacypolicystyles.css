@@ -529,8 +529,68 @@ footer .info ul li:hover a i
     {
         flex-direction: column;
     }
+    footer .info .logo
+    {
+        white-space: nowrap;
+        font-size: 4vw;
+    }
     footer .info p
     {
         white-space: nowrap;
+        font-size: 2vw;
+    }
+
+
+    footer .info ul
+    {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .info ul li
+    {
+        list-style: none;
+        height: 5.5vw;
+        width: 5.5vw;
+        margin: 3vw 3vw;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #f78da7;
+        cursor: pointer;
+    }
+
+    footer .info ul li:hover
+    {
+        background-color: #f78da7;
+        border: none;
+        height: 5.5vw;
+        width: 5.5vw;
+        border-radius: 50%;
+        box-shadow: 0 0 10px #f78da7;
+        transform: scale(1.25);
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    footer .info ul li a i
+    {
+        margin-top: 0.5vh;
+        font-size: 3vw;
+        color:#f78da7;
+        display:inline-block;
+        list-style: none;
+    }
+
+    footer .info ul li:hover a i
+    {
+        margin-top: 0.5vh;
+        font-size: 3vw;
+        color: #fff;
+        display:inline-block;
+        list-style: none;
     }
 }
