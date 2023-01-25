@@ -400,7 +400,7 @@ footer .info ul li:hover a i
     .banner .bg img
     {
         position: absolute;
-        width: 60vw;
+        width: 70vw;
         height: auto;
         margin-bottom: 65vw;
         margin-top: 20vw;
@@ -415,23 +415,23 @@ footer .info ul li:hover a i
         border-radius: 10px;
     }
     .banner .bg .content h2 {
-        font-size: 5vw;
+        font-size: 6vw;
         color: #000000;
         letter-spacing: 1px;
         font-weight: 300;
         font-family: "Amsterdam Four";
         white-space: nowrap;
         text-align: center;
-        margin-top: 40vw;
+        margin-top: 50vw;
     }
     .banner .bg .content p {
-        font-size: 1.75vw;
+        font-size: 2vw;
         color: #000000;
         letter-spacing: 1px;
         text-align: center;
     }
     .banner .bg .content a {
-        font-size: 1.7vw;
+        font-size: 2.5vw;
         padding: 1.85vw 2.9vw;
         display: block;
         margin: 20px auto;
@@ -449,7 +449,7 @@ footer .info ul li:hover a i
     }
     .banner .bg .content a:hover
     {
-        font-size: 1.7vw;
+        font-size: 2.5vw;
         padding: 1.85vw 2.9vw;
         display: block;
         margin: 20px auto;
