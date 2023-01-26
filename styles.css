@@ -303,8 +303,11 @@ header .action .searchBx input
 
 .games h2
 {
-    color: rgb(0, 0, 0);
     margin: 10px 0;
+    white-space: nowrap;
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
 }
 
 .games ul
@@ -481,16 +484,20 @@ header .action .searchBx input
     object-fit: cover;
     border-radius: 10px;
 }
-
+.contact h1
+{
+    font-size: 3em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: black;
+}
 .contact .form
 {
     width: 50%;
     margin: 30px;
-}
-
-.contact .form h1
-{
-    color: #000000;
 }
 
 .contact .form .inputBx
@@ -743,22 +750,23 @@ footer .info ul li:hover a i
         position: relative;
         width: 50px;
         height: 50px;
-        background-image: url(menu.png);
+        background-image: url(menu_1920_small.png);
         background-position: center;
-        background-size: 6vw;
+        background-size: 10vw;
         background-repeat: no-repeat;
         cursor: pointer;
         z-index: 1001;
     }
     .toggleMenu.active
     {
-        background-image: url(close.png);
+        background-image: url(close_1920_small.png);
         width: 50px;
         height: 50px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 6vw;
+        background-size: 10vw;
         cursor: pointer;
+        z-index: 1001;
     }
 
     /* Banner Sections */
@@ -954,12 +962,13 @@ footer .info ul li:hover a i
     }
     .games h2
     {
-        font-size: 10vw;
+        font-size: 8vw;
         font-weight: 700;
-        color: #000000;
         display: flex;
         align-items: center;
         justify-content: center;
+        white-space: nowrap;
+        color: black;
     }
     .games ul
     {
@@ -989,11 +998,6 @@ footer .info ul li:hover a i
         color: white;
         box-shadow: 0 0 20px #f78da7;
     }
-
-
-
-
-
     .games .cardBx
     {
         width: 100%;
@@ -1134,6 +1138,7 @@ footer .info ul li:hover a i
         justify-content: center;
         align-items: center;
         text-align: center;
+        margin-top: 100px;
     }
     .contact img
     {
