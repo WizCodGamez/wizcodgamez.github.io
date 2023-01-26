@@ -570,7 +570,7 @@ footer .info ul li:hover a i
         height: 50px;
         background-image: url(menu.png);
         background-position: center;
-        background-size: 6vw;
+        background-size: 10vw;
         background-repeat: no-repeat;
         cursor: pointer;
         z-index: 1001;
@@ -582,8 +582,9 @@ footer .info ul li:hover a i
         height: 50px;
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 6vw;
+        background-size: 10vw;
         cursor: pointer;
+        z-index: 1001;
     }
 
     /* Banner Sections */
