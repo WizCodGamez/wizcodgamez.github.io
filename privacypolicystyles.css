@@ -449,10 +449,10 @@ footer .info ul li:hover a i
     {
         cursor: pointer;
         position: fixed;
-        bottom: 22.5vh;
-        right:3px;
-        height: 40px;
-        width: 40px;
+        bottom: 250px;
+        right:10px;
+        height: 70px;
+        width: 70px;
         display: none;
         place-items: center;
         border-radius: 50%;
@@ -463,13 +463,13 @@ footer .info ul li:hover a i
     {
         cursor: pointer;
         display: block;
-        height: calc(100% - 4px);
-        width: calc(100% - 4px);
+        height: calc(100% - 10px);
+        width: calc(100% - 10px);
         background-color: #fff;
         border-radius: 50%;
         display: grid;
         place-items: center;
-        font-size: 20px;
+        font-size: 35px;
         color: #f78da7;
         z-index: 2;
     }
@@ -692,18 +692,18 @@ footer .info ul li:hover a i
     }
     .privacy .contentBx h1
     {
-        font-size: 4vw;
+        font-size: 5vw;
         font-weight: 500;
     }
     .privacy .contentBx h2
     {
-        font-size: 3vw;
+        font-size: 4vw;
         margin-bottom: 1vw;
         margin-top: 10vw;
     }
     .privacy .contentBx .info
     {
-        font-size: 2vw;
+        font-size: 4vw;
     }
     .privacy .contentBx .info li
     {
