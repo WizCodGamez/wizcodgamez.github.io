@@ -345,6 +345,7 @@ header .action .searchBx input
     box-shadow: 0 0 10px #f78da7;
 }
 
+
 .games .cardBx
 {
     width: 100%;
@@ -407,25 +408,31 @@ header .action .searchBx input
 
 .games .cardBx .card .info a
 {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 17px 30px;
     margin: 10px 0px;
     text-decoration: none;
     font-weight: 500;
     border-radius: 50px;
     height: 60px;
-    color: #fff;
-    background-color: #f78da7;
+    color: #f78da7;
+    background-color: #fff;
     letter-spacing: 1px;
+    border: 1px solid #f78da7;
     transition: all .3s ease-in-out 0s;
 }
 
 .games .cardBx .card .info  a:hover
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 17px 30px;
-    margin: 20px 0px;
+    margin: 10px 0px;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 500;
     border-radius: 50px;
     height: 60px;
     color: #fff;
@@ -1081,23 +1088,29 @@ footer .info ul li:hover a i
 
     .games .cardBx .card .info a
     {
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 17px 30px;
         margin: 10px 0px;
         text-decoration: none;
         font-weight: 500;
         border-radius: 50px;
         height: 60px;
-        color: #fff;
-        background-color: #f78da7;
+        color: #f78da7;
+        background-color: #fff;
+        border: 1px solid #f78da7;
         letter-spacing: 1px;
         transition: all .3s ease-in-out 0s;
     }
 
     .games .cardBx .card .info  a:hover
     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 17px 30px;
-        margin: 20px 0px;
+        margin: 10px 0px;
         text-decoration: none;
         font-weight: 700;
         border-radius: 50px;
