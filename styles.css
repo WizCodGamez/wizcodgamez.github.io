@@ -16,6 +16,11 @@
     scroll-behavior: smooth;
 }
 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
 body
 {
     background-color: #ffffff;
@@ -377,40 +382,6 @@ header .action .searchBx input
     text-align: center;
 }
 
-.games .cardBx .card .progress-line
-{
-    position: relative;
-    height: 10px;
-    width: 100%;
-    background: #f78da7;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-}
-
-.games .cardBx .card .progress-line span
-{
-    position: relative;
-    height: 100%;
-    width: 80%;
-    border-radius: 10px;
-    background: #f78da7;
-    box-shadow: 0 0 10px #f78da7;
-    transform: scaleX(0);
-    transform-origin: left;
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-}
-
-@keyframes animate
-{
-    100%
-    {
-        transform: scaleX(1);
-    }
-}
-
 .games .cardBx .card .info
 {
     border-top: 2px solid #ff245b;
@@ -617,11 +588,12 @@ footer .info ul li
     width: 50px;
     margin: 5px 10px;
     border-radius: 50%;
+    border: 1px solid #f78da7;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #f78da7;
-    cursor: pointer;
+    text-align: center;
 }
 
 footer .info ul li:hover
@@ -632,17 +604,29 @@ footer .info ul li:hover
     transform: scale(1.25);
     transition-duration: 0.5s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer .info ul li a i
 {
     font-size: 1.5em;
     color:#f78da7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer .info ul li:hover a i
 {
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .animeX
@@ -1266,7 +1250,6 @@ footer .info ul li:hover a i
         justify-content: center;
         align-items: center;
     }
-
     footer .info ul li
     {
         list-style: none;
@@ -1279,6 +1262,7 @@ footer .info ul li:hover a i
         align-items: center;
         border: 1px solid #f78da7;
         cursor: pointer;
+        text-decoration: none;
     }
 
     footer .info ul li:hover
@@ -1292,22 +1276,30 @@ footer .info ul li:hover a i
         transform: scale(1.25);
         transition-duration: 0.5s;
         cursor: pointer;
+        text-decoration: none;
     }
 
     footer .info ul li a i
     {
         font-size: 5vw;
         color:#f78da7;
-        display:inline-block;
+        display:flex;
         list-style: none;
         text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     footer .info ul li:hover a i
     {
         font-size: 5vw;
         color: #fff;
-        display:inline-block;
+        display:flex;
         list-style: none;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

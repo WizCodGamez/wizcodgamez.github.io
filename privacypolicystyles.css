@@ -16,6 +16,11 @@
     scroll-behavior: smooth;
 }
 
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
 body
 {
     background-color: #ffffff;
@@ -62,6 +67,21 @@ body
     place-items: center;
     font-size: 35px;
     color: #f78da7;
+    z-index: 2;
+}
+#progresss:hover
+{
+    cursor: pointer;
+    position: fixed;
+    bottom: 150px;
+    right:10px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #ff245b;
+    transition: all .3s ease-in-out 0s;
     z-index: 2;
 }
 
@@ -399,11 +419,12 @@ footer .info ul li
     width: 50px;
     margin: 5px 10px;
     border-radius: 50%;
+    border: 1px solid #f78da7;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #f78da7;
-    cursor: pointer;
+    text-align: center;
 }
 
 footer .info ul li:hover
@@ -414,17 +435,29 @@ footer .info ul li:hover
     transform: scale(1.25);
     transition-duration: 0.5s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer .info ul li a i
 {
     font-size: 1.5em;
     color:#f78da7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 footer .info ul li:hover a i
 {
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .animeP
@@ -472,6 +505,20 @@ footer .info ul li:hover a i
         place-items: center;
         font-size: 35px;
         color: #f78da7;
+        z-index: 2;
+    }
+    #progresss:hover
+    {
+        cursor: pointer;
+        position: fixed;
+        bottom: 170px;
+        right:10px;
+        height: 50px;
+        width: 50px;
+        display: none;
+        place-items: center;
+        border-radius: 50%;
+        box-shadow: 0 0 20px #ff245b;
         z-index: 2;
     }
     #progresss-value i
@@ -791,6 +838,7 @@ footer .info ul li:hover a i
         align-items: center;
         border: 1px solid #f78da7;
         cursor: pointer;
+        text-decoration: none;
     }
 
     footer .info ul li:hover
@@ -804,22 +852,30 @@ footer .info ul li:hover a i
         transform: scale(1.25);
         transition-duration: 0.5s;
         cursor: pointer;
+        text-decoration: none;
     }
 
     footer .info ul li a i
     {
         font-size: 5vw;
         color:#f78da7;
-        display:inline-block;
+        display:flex;
         list-style: none;
         text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     footer .info ul li:hover a i
     {
         font-size: 5vw;
         color: #fff;
-        display:inline-block;
+        display:flex;
         list-style: none;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
