@@ -267,9 +267,11 @@ header .action .searchBx input
     font-weight: 500;
     border-radius: 50px;
     height: 60px;
-    color: #fff;
-    background-color: #f78da7;
+    color: #f78da7;
+    background-color: #fff;
     letter-spacing: 1px;
+    border: 1px solid #f78da7;
+    transition: all .3s ease-in-out 0s;
 }
 
 .about .contentBx a:hover
@@ -284,6 +286,7 @@ header .action .searchBx input
     letter-spacing: 1px;
     background-color: #f78da7;
     box-shadow: 0 0 20px #f78da7;
+    transition: all .3s ease-in-out 0s;
 }
 
 .about img
