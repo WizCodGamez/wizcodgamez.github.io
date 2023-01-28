@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Home Banner */
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banner .bg
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content
+{
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2
+{
+    font-size: 5vw;
+    color: #000000;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.banner .bg .content p
+{
+    font-size: 1.5vw;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a
+{
+    display: inline-block;
+    padding: 17px 30px;
+    margin: 20px 0px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 50px;
+    height: 60px;
+    color: #f78da7;
+    background-color: #fff;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    border: 1px solid #f78da7;
+    transition: all .3s ease-in-out 0s;
+}
+
+.banner .bg .content a:hover
+{
+    padding: 17px 30px;
+    margin: 20px 0px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    height: 60px;
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #f78da7;
+    box-shadow: 0 0 20px #f78da7;
+    white-space: nowrap;
+    transition: all .3s ease-in-out 0s;
+}
+
+.banner .bg img
+{
+    width: 40vw;
+}
