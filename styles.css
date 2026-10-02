@@ -224,6 +224,160 @@
             font-weight: 400;
         }
 
+        /* =========================
+           GAME GRID
+        ========================= */
+        
+        .games-grid {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+        
+        
+        /* =========================
+           GAME CARD
+        ========================= */
+        
+        .game-card {
+            overflow: hidden;
+        
+            background: #ffffff;
+        
+            border-radius: 18px;
+        
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-6px);
+        
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        
+        /* =========================
+           GAME IMAGE
+        ========================= */
+        
+        .game-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        
+            overflow: hidden;
+        }
+        
+        .game-image img {
+            width: 100%;
+            height: 100%;
+        
+            display: block;
+        
+            object-fit: cover;
+        
+            transition: transform 0.35s ease;
+        }
+        
+        .game-card:hover .game-image img {
+            transform: scale(1.04);
+        }
+        
+        
+        /* =========================
+           GAME INFORMATION
+        ========================= */
+        
+        .game-info {
+            padding: 25px 27px 27px;
+        }
+        
+        .game-info h3 {
+            margin: 0 0 7px;
+        
+            color: #333333;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 21px;
+            font-weight: 500;
+        }
+        
+        .game-info p {
+            margin: 0 0 22px;
+        
+            color: #888888;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+        }
+        
+        
+        /* =========================
+           BOTTOM ROW
+        ========================= */
+        
+        .game-bottom {
+            display: flex;
+        
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        
+        /* Free */
+        
+        .game-price {
+            color: #f77f9f;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        
+        /* Button */
+        
+        .game-button {
+            display: inline-flex;
+        
+            align-items: center;
+            justify-content: center;
+        
+            min-width: 95px;
+            height: 36px;
+        
+            padding: 0 18px;
+        
+            border-radius: 25px;
+        
+            background: #f77f9f;
+        
+            color: #ffffff;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+        
+            text-decoration: none;
+        
+            transition:
+                background-color 0.2s ease,
+                transform 0.2s ease;
+        }
+        
+        .game-button:hover {
+            background: #f46f93;
+            transform: translateY(-2px);
+        }
+
+
 
         /* =========================================
            TABLET
