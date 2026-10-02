@@ -178,19 +178,15 @@
 
         .games-link {
             display: inline-flex;
-
             align-items: center;
-
             gap: 4px;
         }
 
         .arrow {
-            position: relative;
-
-            top: -1px;
-
-            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
             line-height: 1;
+            position: static;
         }
 
 
