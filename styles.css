@@ -462,7 +462,7 @@
             }
 
             .logo {
-                width: 300px;
+                width: 350px;
             }
 
             .hero h1 {
@@ -471,18 +471,18 @@
 
                 padding: 0 20px;
 
-                font-size: 23px;
+                font-size: 28px;
                 line-height: 1.25;
             }
 
             .subtitle {
                 margin-bottom: 17px;
-                font-size: 12px;
+                font-size: 16px;
             }
 
             .cta-button {
-                width: 100px;
-                height: 35px;
+                width: 120px;
+                height: 40px;
                 font-size: 12px;
             }
 
@@ -493,7 +493,7 @@
             }
 
             .navigation a {
-                font-size: 12px;
+                font-size: 16px;
             }
 
             .games-link {
