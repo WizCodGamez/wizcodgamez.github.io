@@ -190,6 +190,41 @@
         }
 
 
+        /* =========================
+           GAMES SECTION
+        ========================= */
+        
+        .games-section {
+            width: 100%;
+            padding: 110px 8%;
+            background: #ffffff;
+        }
+        
+        
+        /* Section heading */
+        
+        .games-header {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+        
+        .games-header h2 {
+            margin: 0 0 12px;
+            color: #333333;
+            font-family: "Poppins", sans-serif;
+            font-size: 34px;
+            font-weight: 400;
+        }
+        
+        .games-header p {
+            margin: 0;
+            color: #666666;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+
         /* =========================================
            TABLET
         ========================================= */
@@ -229,6 +264,30 @@
 
             .navigation a {
                 font-size: 12px;
+            }
+
+           .games-section {
+                padding: 90px 6%;
+            }
+        
+            .games-header {
+                margin-bottom: 45px;
+            }
+        
+            .games-header h2 {
+                font-size: 30px;
+            }
+        
+            .games-grid {
+                gap: 25px;
+            }
+        
+            .game-info {
+                padding: 21px;
+            }
+        
+            .game-info h3 {
+                font-size: 18px;
             }
         }
 
@@ -288,6 +347,58 @@
             }
 
             .arrow {
+                font-size: 8px;
+            }
+
+            .games-section {
+                padding: 70px 20px;
+            }
+        
+            .games-header {
+                margin-bottom: 30px;
+            }
+        
+            .games-header h2 {
+                font-size: 23px;
+            }
+        
+            .games-header p {
+                font-size: 9px;
+            }
+        
+            .games-grid {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+        
+            .game-card {
+                border-radius: 13px;
+            }
+        
+            .game-info {
+                padding: 17px;
+            }
+        
+            .game-info h3 {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+        
+            .game-info p {
+                margin-bottom: 16px;
+                font-size: 9px;
+            }
+        
+            .game-price {
+                font-size: 10px;
+            }
+        
+            .game-button {
+                min-width: 75px;
+                height: 29px;
+        
+                padding: 0 13px;
+        
                 font-size: 8px;
             }
         }
