@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -10,447 +11,84 @@
 
     <title>WizCod Gamez</title>
 
-    <meta
-        name="description"
-        content="WizCod Gamez - Check out our collection of games."
-    >
-
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+    <header class="hero">
 
-    <header class="site-header">
+        <div class="hero-content">
 
-        <div class="header-container">
-
+            <!-- Logo -->
             <a href="/" class="logo-link">
                 <img
-                    src="Logo_512.png"
+                    src="images/logo.png"
                     alt="WizCod Gamez"
-                    class="site-logo"
+                    class="logo"
                 >
             </a>
 
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
-                <a href="#adventure">Adventure Games</a>
-                <a href="#casual">Casual Games</a>
-                <a href="#fun">Fun Games</a>
-            </nav>
 
-            <!-- Mobile menu icon -->
-            <button
-                class="mobile-menu-button"
-                type="button"
-                aria-label="Open menu"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <!-- Heading -->
+            <h1>
+                “Keep calm and game on”
+            </h1>
+
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                Check our collection of games
+            </p>
+
+
+            <!-- CTA -->
+            <a href="#games" class="cta-button">
+                Check it now
+            </a>
+
+
+            <!-- Navigation -->
+            <nav class="navigation">
+
+                <a href="/">
+                    Home
+                </a>
+
+                <a href="#games" class="games-link">
+                    Games
+                    <span class="arrow">⌄</span>
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+                <a href="#privacy">
+                    Privacy Policy
+                </a>
+
+            </nav>
 
         </div>
 
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
-
-    <main>
-
-        <section class="hero">
-
-            <img
-                src="Logo_512.png"
-                alt="WizCod Gamez"
-                class="hero-logo"
-            >
-
-            <h1>
-                “Keep calm and<br>
-                game on”
-            </h1>
-
-            <p class="hero-subtitle">
-                Check our collection of games
-            </p>
-
-            <a href="#games" class="primary-button">
-                Check it now
-            </a>
-
-            <div class="hero-menu-indicator">
-                =
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             GAMES
-        ========================== -->
-
-        <section id="games" class="games-section">
-
-
-            <!-- =====================
-                 ADVENTURE GAMES
-            ====================== -->
-
-            <section
-                id="adventure"
-                class="game-category"
-            >
-
-                <div class="category-heading">
-                    <h2>Adventure Games</h2>
-                </div>
-
-
-                <!-- Cross Tracks 3D -->
-
-                <article class="game-card">
-
-                    <img
-                        src="cross-tracks-3d.png"
-                        alt="Cross Tracks 3D"
-                        class="game-image"
-                    >
-
-                    <h3>Cross Tracks 3D</h3>
-
-                    <p>
-                        In this new hyper-casual game, the player's aim
-                        is to help the man cross the roads safely. It may
-                        sound easy, but it's easier said than done.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-
-                <!-- Ice Runner -->
-
-                <article class="game-card">
-
-                    <img
-                        src="ice-runner.png"
-                        alt="Ice Runner"
-                        class="game-image"
-                    >
-
-                    <h3>Ice Runner</h3>
-
-                    <p>
-                        Play this fun and exciting game where you take
-                        control of an ice cube and help him to escape
-                        the Ice monster which is after him.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-            </section>
-
-
-
-            <!-- =====================
-                 CASUAL GAMES
-            ====================== -->
-
-            <section
-                id="casual"
-                class="game-category"
-            >
-
-                <div class="category-heading">
-                    <h2>Casual Games</h2>
-                </div>
-
-
-                <!-- Catch Dragon Eggs -->
-
-                <article class="game-card">
-
-                    <img
-                        src="catch-dragon-eggs.png"
-                        alt="Catch Dragon Eggs"
-                        class="game-image"
-                    >
-
-                    <h3>Catch Dragon Eggs</h3>
-
-                    <p>
-                        Play this new hyper-casual game in which you
-                        try to catch as many Dragon Eggs as possible
-                        before the timer runs out.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-
-                <!-- Save The Organs -->
-
-                <article class="game-card">
-
-                    <img
-                        src="save-the-organs.png"
-                        alt="Save The Organs"
-                        class="game-image"
-                    >
-
-                    <h3>Save The Organs</h3>
-
-                    <p>
-                        Play this hyper-casual game in which the player
-                        has to protect various organs from waves of
-                        germs that are headed towards the organs.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-
-                <!-- Color Tie -->
-
-                <article class="game-card">
-
-                    <img
-                        src="color-tie.png"
-                        alt="Color Tie"
-                        class="game-image"
-                    >
-
-                    <h3>Color Tie</h3>
-
-                    <p>
-                        Play this hyper-casual game in which the player
-                        must match the color of the tie before it falls
-                        back on the platform.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-
-                <!-- Bottle Shooter -->
-
-                <article class="game-card">
-
-                    <img
-                        src="bottle-shooter.png"
-                        alt="Bottle Shooter"
-                        class="game-image"
-                    >
-
-                    <h3>Bottle Shooter</h3>
-
-                    <p>
-                        Bottle Shooter is the casual yet uniquely
-                        ultimate bottle shooting game that you are
-                        looking for. Test your aiming skills in this
-                        shooter game.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-
-                <!-- Toss The Egg -->
-
-                <article class="game-card">
-
-                    <img
-                        src="toss-the-egg.png"
-                        alt="Toss The Egg"
-                        class="game-image"
-                    >
-
-                    <h3>Toss The Egg</h3>
-
-                    <p>
-                        A brand new hyper-casual game where player
-                        have to toss the egg as high as possible while
-                        avoiding falling down from the nest.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-            </section>
-
-
-
-            <!-- =====================
-                 FUN GAMES
-            ====================== -->
-
-            <section
-                id="fun"
-                class="game-category"
-            >
-
-                <div class="category-heading">
-                    <h2>Fun Games</h2>
-                </div>
-
-
-                <!-- Calculate Your Love -->
-
-                <article class="game-card">
-
-                    <img
-                        src="calculate-your-love.png"
-                        alt="Calculate Your Love"
-                        class="game-image"
-                    >
-
-                    <h3>Calculate Your Love</h3>
-
-                    <p>
-                        Want to know how strong your love is for your
-                        crush? You can check it using the Calculate
-                        Your Love app.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-
-                <!-- Virtual Pencil -->
-
-                <article class="game-card">
-
-                    <img
-                        src="virtual-pencil.png"
-                        alt="Virtual Pencil"
-                        class="game-image"
-                    >
-
-                    <h3>Virtual Pencil</h3>
-
-                    <p>
-                        You can choose different types of virtual
-                        pencil. Each pencil is unique and colorful.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read More
-                    </a>
-
-                </article>
-
-            </section>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="site-footer">
-
-        <div class="footer-social">
-
-            <a href="#" aria-label="WordPress">
-                <span>W</span>
-            </a>
-
-            <a href="#" aria-label="Facebook">
-                <span>f</span>
-            </a>
-
-            <a href="#" aria-label="X">
-                <span>𝕏</span>
-            </a>
-
-            <a href="#" aria-label="Instagram">
-                <span>◎</span>
-            </a>
-
-            <a href="#" aria-label="LinkedIn">
-                <span>in</span>
-            </a>
-
-            <a href="#" aria-label="YouTube">
-                <span>▶</span>
-            </a>
-
-        </div>
-
-    </footer>
-
-
 </body>
+
 </html>
