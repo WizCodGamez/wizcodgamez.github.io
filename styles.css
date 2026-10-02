@@ -31,7 +31,7 @@
 
         .hero {
             width: 100%;
-            min-height: 1080px;
+            min-height: 720px;
 
             background: #ffffff;
 
@@ -68,7 +68,7 @@
         }
 
         .logo {
-            width: 512px;
+            width: 1080px;
             height: auto;
             display: block;
         }
