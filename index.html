@@ -2,275 +2,455 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WizCod Gamez - Home</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>WizCod Gamez</title>
+
+    <meta
+        name="description"
+        content="WizCod Gamez - Check out our collection of games."
+    >
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <a href="index.html" class="logo">WizCod Gamez</a>
-        <ul class="nav">
-            <li><a href="index.html#home" onclick="toggleMenu();">Home</a></li>
-            <li><a href="index.html#about" onclick="toggleMenu();">About Us</a></li>
-            <li><a href="index.html#games" onclick="toggleMenu();">Games</a></li>
-            <li><a href="comingsoon.html" onclick="toggleMenu();">Projects</a></li>
-            <li><a href="index.html#contact-us" onclick="toggleMenu();">Contact Us</a></li>
-            <li><a href="privacy-policy.html" onclick="toggleMenu();">Privacy Policy</a></li>
-        </ul>
-        <!--
-        <div class="action">
-            <div class="searchBx">
-                <a href="#"><i class='bx bx-search'></i></a>
-                <input type="text" placeholder="Search Games...                  ">
-            </div>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="/" class="logo-link">
+                <img
+                    src="images/logo.png"
+                    alt="WizCod Gamez"
+                    class="site-logo"
+                >
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="#adventure">Adventure Games</a>
+                <a href="#casual">Casual Games</a>
+                <a href="#fun">Fun Games</a>
+            </nav>
+
+            <!-- Mobile menu icon -->
+            <button
+                class="mobile-menu-button"
+                type="button"
+                aria-label="Open menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </div>
-        -->
-        <div class="toggleMenu" onclick="toggleMenu();"></div>
+
     </header>
 
-    <!-- Home Banner -->
-    <div class="banner" id="home">
-        <div class="bg">
-            <div class="content">
-                <h2>“Keep calm and game on”</h2>
-                <p>Check our collection of games</p>
-                <a href="#games" class="btn">Check it now</a>
-            </div>
-            <img src="Logo_1920_new.png">
-        </div>
-    </div>
 
-    <!-- About -->
-    <p id="about"></p>
-    <div class="about animeX">
-        <div class="contentBx">
-            <h2>About Us</h2>
-            <p>
-                An indie mobile game development company providing users with wide variety of mobile games.
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <img
+                src="images/logo.png"
+                alt="WizCod Gamez"
+                class="hero-logo"
+            >
+
+            <h1>
+                “Keep calm and<br>
+                game on”
+            </h1>
+
+            <p class="hero-subtitle">
+                Check our collection of games
             </p>
-            <a href="aboutus.html">Read more</a>
+
+            <a href="#games" class="primary-button">
+                Check it now
+            </a>
+
+            <div class="hero-menu-indicator">
+                =
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GAMES
+        ========================== -->
+
+        <section id="games" class="games-section">
+
+
+            <!-- =====================
+                 ADVENTURE GAMES
+            ====================== -->
+
+            <section
+                id="adventure"
+                class="game-category"
+            >
+
+                <div class="category-heading">
+                    <h2>Adventure Games</h2>
+                </div>
+
+
+                <!-- Cross Tracks 3D -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/cross-tracks-3d.png"
+                        alt="Cross Tracks 3D"
+                        class="game-image"
+                    >
+
+                    <h3>Cross Tracks 3D</h3>
+
+                    <p>
+                        In this new hyper-casual game, the player's aim
+                        is to help the man cross the roads safely. It may
+                        sound easy, but it's easier said than done.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+
+                <!-- Ice Runner -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/ice-runner.png"
+                        alt="Ice Runner"
+                        class="game-image"
+                    >
+
+                    <h3>Ice Runner</h3>
+
+                    <p>
+                        Play this fun and exciting game where you take
+                        control of an ice cube and help him to escape
+                        the Ice monster which is after him.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- =====================
+                 CASUAL GAMES
+            ====================== -->
+
+            <section
+                id="casual"
+                class="game-category"
+            >
+
+                <div class="category-heading">
+                    <h2>Casual Games</h2>
+                </div>
+
+
+                <!-- Catch Dragon Eggs -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/catch-dragon-eggs.png"
+                        alt="Catch Dragon Eggs"
+                        class="game-image"
+                    >
+
+                    <h3>Catch Dragon Eggs</h3>
+
+                    <p>
+                        Play this new hyper-casual game in which you
+                        try to catch as many Dragon Eggs as possible
+                        before the timer runs out.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+
+                <!-- Save The Organs -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/save-the-organs.png"
+                        alt="Save The Organs"
+                        class="game-image"
+                    >
+
+                    <h3>Save The Organs</h3>
+
+                    <p>
+                        Play this hyper-casual game in which the player
+                        has to protect various organs from waves of
+                        germs that are headed towards the organs.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+
+                <!-- Color Tie -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/color-tie.png"
+                        alt="Color Tie"
+                        class="game-image"
+                    >
+
+                    <h3>Color Tie</h3>
+
+                    <p>
+                        Play this hyper-casual game in which the player
+                        must match the color of the tie before it falls
+                        back on the platform.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+
+                <!-- Bottle Shooter -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/bottle-shooter.png"
+                        alt="Bottle Shooter"
+                        class="game-image"
+                    >
+
+                    <h3>Bottle Shooter</h3>
+
+                    <p>
+                        Bottle Shooter is the casual yet uniquely
+                        ultimate bottle shooting game that you are
+                        looking for. Test your aiming skills in this
+                        shooter game.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+
+                <!-- Toss The Egg -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/toss-the-egg.png"
+                        alt="Toss The Egg"
+                        class="game-image"
+                    >
+
+                    <h3>Toss The Egg</h3>
+
+                    <p>
+                        A brand new hyper-casual game where player
+                        have to toss the egg as high as possible while
+                        avoiding falling down from the nest.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- =====================
+                 FUN GAMES
+            ====================== -->
+
+            <section
+                id="fun"
+                class="game-category"
+            >
+
+                <div class="category-heading">
+                    <h2>Fun Games</h2>
+                </div>
+
+
+                <!-- Calculate Your Love -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/calculate-your-love.png"
+                        alt="Calculate Your Love"
+                        class="game-image"
+                    >
+
+                    <h3>Calculate Your Love</h3>
+
+                    <p>
+                        Want to know how strong your love is for your
+                        crush? You can check it using the Calculate
+                        Your Love app.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+
+                <!-- Virtual Pencil -->
+
+                <article class="game-card">
+
+                    <img
+                        src="images/virtual-pencil.png"
+                        alt="Virtual Pencil"
+                        class="game-image"
+                    >
+
+                    <h3>Virtual Pencil</h3>
+
+                    <p>
+                        You can choose different types of virtual
+                        pencil. Each pencil is unique and colorful.
+                    </p>
+
+                    <a
+                        href="#"
+                        class="read-more"
+                    >
+                        Read More
+                    </a>
+
+                </article>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-social">
+
+            <a href="#" aria-label="WordPress">
+                <span>W</span>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <span>f</span>
+            </a>
+
+            <a href="#" aria-label="X">
+                <span>𝕏</span>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <span>◎</span>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+                <span>in</span>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+                <span>▶</span>
+            </a>
+
         </div>
-        <img src="AboutUsImage.png">
-    </div>
-    
-    <!-- Game -->
-    <p id="games"></p> 
-    <div class="games animeX">
-        <h2>Our Game Collection</h2>
-        <ul>
-            <li class="list active" data-filter="all">All</li>
-            <li class="list" data-filter="adventure">Adventure</li>
-            <li class="list" data-filter="casual">Casual</li>
-            <li class="list" data-filter="fun">Fun Games</li>
-        </ul>
-        <div class="cardBx">
-            <div class="card" data-item="adventure">
-                <img src="CrossTracks3D/CrossTracks3D.png">
-                <div class="content">
-                    <h4>Cross Tracks 3D</h4>
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.CrossyRoad&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="card" data-item="adventure">
-                <img src="IceRunner/IceRunner.png">
-                <div class="content">
-                    <h4>Ice Runner</h4>          
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.IceRunner&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card" data-item="casual">
-                <img src="TossTheEgg/TossTheEgg.png">
-                <div class="content">
-                    <h4>Toss The Egg</h4>
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.TossTheEgg&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-item="casual">
-                <img src="BottleShooter/BottleShooter.png">
-                <div class="content">
-                    <h4>Bottle Shooter</h4>
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.BottleShooter&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-item="casual">
-                <img src="CatchDragonEggs/CatchDragonEggs.png">
-                <div class="content">
-                    <h4>Catch Dragon Eggs</h4>
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.CatchDragonEggs&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="card" data-item="casual">
-                <img src="SaveTheOrgans/SaveTheOrgans.jpg">
-                <div class="content">
-                    <h4>Save The Organs</h4>
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.SaveTheOrgans&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-item="casual">
-                <img src="ColorTie/ColorTie.png">
-                <div class="content">
-                    <h4>Color Tie</h4>
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.ColorTie&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-item="fun">
-                <img src="VirtualPencil/VirtualPencil.png">
-                <div class="content">
-                    <h4>Virtual Pencil</h4>
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.VirtualPencil&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card" data-item="fun">
-                <img src="LoveCalculator/LoveCalculator.png">
-                <div class="content">
-                    <h4>Love Calculator</h4>                 
-                    <div class="info">
-                        <p>Pricing<br><span>Free</span></p>
-                        <a href='https://play.google.com/store/apps/details?id=com.CreepyDevil.CalculateYourLove&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img src="google-play-badge.png" style="width: 200px; height:80px;"></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="contact animeX" id="contact-us">
-        <img src="WriteToUs.png">
-        <div class="form">
-            <h1>Contact Us</h1>
-            <div class="inputBx">
-                <p>Enter Name</p>
-                <input type="text" placeholder="Enter your full name">
-            </div>
-            <div class="inputBx">
-                <p>Enter Email</p>
-                <input type="text" placeholder="Enter your email">
-            </div>
-            <div class="inputBx">
-                <p>Message</p>
-                <textarea placeholder="Type here..."></textarea>
-            </div>
-            <div class="inputBx">
-                <input type="submit" name="Submit">
-            </div>
-        </div>
-    </div>
-    
-    <!-- Footer Section -->
-    <footer>
-        <div class="info">
-            <a href="index.html" class="logo">WizCod Gamez</a>
-            <p><i class='bx bx-copyright' ></i>2023 All Rights Reserved</p>
-            <ul>
-                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-                <li><a href="#"><i class='bx bxl-youtube'></i></a></li>
-                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
-                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
-                <li><a href="#"><i class='bx bxl-pinterest' ></i></a></li>
-            </ul>
-        </div>
     </footer>
 
-
-    <script>
-        /* Sticky NavBar */
-        window.addEventListener('scroll',function(){
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky',window.scrollY > 0);
-        });
-
-        /* Responsive Nav Bar */
-        function toggleMenu()
-        {
-             const toggleMenu = document.querySelector('.toggleMenu');
-             const nav = document.querySelector('.nav');
-             toggleMenu.classList.toggle('active')
-             nav.classList.toggle('active')
-        }
-
-
-        /* Scrolling Animation Effects */
-        window.addEventListener('scroll',function(){
-            var anime = document.querySelectorAll('.animeX');
-
-            for(var s = 0; s < anime.length; s++)
-            {
-                var windowheight = window.innerHeight;
-                var animetop = anime[s].getBoundingClientRect().top;
-                var animepoint = 150;
-
-                if(animetop < windowheight - animepoint)
-                {
-                    anime[s].classList.add('active');
-                }
-                else
-                {
-                    anime[s].classList.remove('active');
-                }
-            }
-        })
-
-        /* Filterable Cards */
-        let list = document.querySelectorAll('.list');
-        let card = document.querySelectorAll('.card');
-
-        for(let i = 0; i < list.length; i++){
-            list[i].addEventListener('click',function(){
-                for(let j = 0; j < list.length; j++){
-                    list[j].classList.remove('active');
-                }
-                this.classList.add('active')
-
-                let dataFilter = this.getAttribute('data-filter');
-
-                for(let k = 0; k < card.length; k++)
-                {
-                    card[k].classList.remove('active');
-                    card[k].classList.add('hide');
-
-                    if(card[k].getAttribute('data-item')==dataFilter || dataFilter == 'all')
-                    {
-                        card[k].classList.remove('hide');
-                        card[k].classList.add('active');
-                    }
-                }
-            })
-        }
-    </script>
 
 </body>
 </html>
