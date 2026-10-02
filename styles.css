@@ -1,312 +1,359 @@
 /* =========================================================
-   DESKTOP LAYOUT
+   RESET
 ========================================================= */
 
-@media (min-width: 768px) {
-
-    /* -----------------------------------------------------
-       HEADER
-    ----------------------------------------------------- */
-
-    .site-header {
-        display: none;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
-    /* -----------------------------------------------------
-       HERO
-    ----------------------------------------------------- */
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background: #ffffff;
+
+    color: #333333;
+
+    font-family: "Poppins", sans-serif;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    width: 100%;
+
+    min-height: 720px;
+
+    background: #ffffff;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding-top: 108px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo-link {
+    display: block;
+
+    line-height: 0;
+}
+
+.logo {
+    width: 405px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.hero h1 {
+    margin-top: 60px;
+
+    margin-bottom: 23px;
+
+    color: #333333;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    line-height: 1.25;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+
+.subtitle {
+    margin: 0 0 30px;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cta-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 129px;
+    height: 49px;
+
+    border-radius: 30px;
+
+    background: #f77f9f;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background: #f46f93;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navigation {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 27px;
+
+    margin-top: 30px;
+}
+
+.navigation a {
+    color: #f77f9f;
+
+    font-size: 14px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    transition: opacity 0.2s ease;
+}
+
+.navigation a:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   GAMES ARROW
+========================================================= */
+
+.games-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+.arrow {
+    position: relative;
+
+    top: -1px;
+
+    font-size: 13px;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
 
     .hero {
-        min-height: 390px;
-
-        padding-top: 45px;
-        padding-bottom: 20px;
+        min-height: 650px;
     }
 
-    .hero-logo {
-        width: 170px;
+    .hero-content {
+        padding-top: 80px;
+    }
 
-        margin-bottom: 25px;
+    .logo {
+        width: 330px;
     }
 
     .hero h1 {
-        font-size: 22px;
-        line-height: 1.25;
+        margin-top: 50px;
 
-        margin-bottom: 8px;
+        font-size: 30px;
     }
 
-    .hero-subtitle {
-        font-size: 8px;
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .cta-button {
+        width: 115px;
+        height: 44px;
+
+        font-size: 13px;
+    }
+
+    .navigation {
+        gap: 20px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100vh;
+
+        min-height: 100svh;
+    }
+
+    .hero-content {
+        padding-top: 70px;
+    }
+
+    .logo {
+        width: 235px;
+    }
+
+    .hero h1 {
+        margin-top: 38px;
 
         margin-bottom: 14px;
+
+        padding: 0 20px;
+
+        font-size: 23px;
+
+        line-height: 1.25;
     }
 
-    .primary-button {
-        width: 67px;
-        height: 27px;
+    .subtitle {
+        margin-bottom: 17px;
 
         font-size: 8px;
     }
 
+    .cta-button {
+        width: 67px;
+        height: 28px;
 
-    /*
-       Desktop navigation underneath
-       the Check it now button.
-    */
-
-    .hero-menu-indicator {
-        display: none;
+        font-size: 8px;
     }
 
-    .hero::after {
-        content:
-            "Home     Games     Projects     Contact     Privacy Policy";
-
-        display: block;
-
-        margin-top: 16px;
-
-        color: #f77f9f;
-
-        font-size: 6px;
-        font-weight: 400;
-
-        word-spacing: 3px;
-    }
-
-
-    /* -----------------------------------------------------
-       MAIN CONTENT
-    ----------------------------------------------------- */
-
-    .game-category {
-        width: calc(100% - 16px);
-
-        max-width: 900px;
-
-        margin: 0 auto;
-
-        padding-top: 35px;
-        padding-bottom: 20px;
-
-        display: grid;
-
-        grid-template-columns: repeat(2, 1fr);
-
-        column-gap: 70px;
-        row-gap: 65px;
-    }
-
-
-    /* -----------------------------------------------------
-       CATEGORY HEADING
-    ----------------------------------------------------- */
-
-    .category-heading {
-        grid-column: 1 / -1;
-
-        margin-bottom: 0;
-    }
-
-    .category-heading h2 {
-        font-size: 11px;
-
-        font-weight: 700;
-    }
-
-    .category-heading::after {
-        bottom: -8px;
-
-        height: 1px;
-    }
-
-
-    /* -----------------------------------------------------
-       GAME CARD
-    ----------------------------------------------------- */
-
-    .game-card {
-        width: 100%;
-
-        min-height: 125px;
-
-        margin: 0;
-
-        display: grid;
-
-        grid-template-columns: 107px 1fr;
-
-        grid-template-rows: auto auto auto;
-
-        column-gap: 15px;
-
-        align-items: center;
-
-        text-align: center;
-    }
-
-
-    /* Image */
-
-    .game-image {
-        width: 107px;
-        height: 107px;
-
-        border-radius: 8px;
-
-        margin: 0;
-
-        grid-column: 1;
-        grid-row: 1 / 4;
-    }
-
-
-    /* Text */
-
-    .game-card h3 {
-        grid-column: 2;
-        grid-row: 1;
-
-        font-size: 10px;
-
-        margin: 0 0 4px;
-    }
-
-    .game-card p {
-        grid-column: 2;
-        grid-row: 2;
-
-        width: 100%;
-
-        font-size: 6.5px;
-        line-height: 1.5;
-
-        margin: 0 0 7px;
-    }
-
-    .read-more {
-        grid-column: 2;
-        grid-row: 3;
-
-        justify-self: center;
-
-        min-width: 48px;
-        height: 22px;
-
-        padding: 0 9px;
-
-        font-size: 6px;
-    }
-
-
-    /* -----------------------------------------------------
-       ALTERNATING ADVENTURE / FUN CARDS
-    ----------------------------------------------------- */
-
-    #adventure .game-card:nth-of-type(3),
-    #fun .game-card:nth-of-type(3) {
-        grid-template-columns: 1fr 107px;
-    }
-
-
-    /*
-       Even cards:
-
-       TEXT | IMAGE
-    */
-
-    #adventure .game-card:nth-of-type(3) .game-image,
-    #fun .game-card:nth-of-type(3) .game-image {
-        grid-column: 2;
-    }
-
-    #adventure .game-card:nth-of-type(3) h3,
-    #adventure .game-card:nth-of-type(3) p,
-    #adventure .game-card:nth-of-type(3) .read-more,
-
-    #fun .game-card:nth-of-type(3) h3,
-    #fun .game-card:nth-of-type(3) p,
-    #fun .game-card:nth-of-type(3) .read-more {
-        grid-column: 1;
-    }
-
-
-    /* -----------------------------------------------------
-       CASUAL GAMES
-    ----------------------------------------------------- */
-
-    #casual .game-card {
-        display: flex;
-
-        flex-direction: column;
-
-        justify-content: flex-start;
-        align-items: center;
-
-        min-height: 180px;
-    }
-
-    #casual .game-image {
-        width: 95px;
-        height: 95px;
-
-        margin-bottom: 7px;
-    }
-
-    #casual .game-card h3 {
-        margin-bottom: 5px;
-
-        font-size: 9px;
-    }
-
-    #casual .game-card p {
-        width: 125px;
-
-        margin-bottom: 7px;
-
-        font-size: 6px;
-    }
-
-    #casual .read-more {
-        height: 21px;
-
-        font-size: 6px;
-    }
-
-
-    /*
-       Color Tie sits in the center.
-    */
-
-    #casual .game-card:nth-of-type(4) {
-        grid-column: 1 / -1;
-
-        justify-self: center;
-    }
-
-
-    /* -----------------------------------------------------
-       FOOTER
-    ----------------------------------------------------- */
-
-    .site-footer {
-        width: calc(100% - 16px);
-
-        max-width: 900px;
-
-        margin: 0 auto;
-
-        padding-top: 12px;
-        padding-bottom: 8px;
-    }
-
-    .footer-social {
+    .navigation {
         gap: 12px;
+
+        margin-top: 17px;
+
+        padding: 0 10px;
     }
 
-    .footer-social a {
+    .navigation a {
         font-size: 7px;
+    }
+
+    .games-link {
+        gap: 2px;
+    }
+
+    .arrow {
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero-content {
+        padding-top: 55px;
+    }
+
+    .logo {
+        width: 210px;
+    }
+
+    .hero h1 {
+        margin-top: 32px;
+
+        font-size: 21px;
+    }
+
+    .navigation {
+        gap: 9px;
+    }
+
+    .navigation a {
+        font-size: 6.5px;
     }
 }
