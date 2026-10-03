@@ -123,14 +123,115 @@
             transform: translateY(-2px);
         }
 
-        .contentBox{
-            width: 100%;
-            background: #ffffff;
-            display: flex;
-            align-items: center;
-            text-align: left-align;
-        }
+        /* =========================
+   PRIVACY POLICY
+========================= */
 
+#full-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.contentBox {
+    width: 100%;
+    max-width: 1000px;
+    text-align: left;
+}
+
+/* Main title */
+
+.contentBox > h1 {
+    text-align: center;
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+/* Horizontal lines */
+
+.contentBox hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 15px 0 25px;
+}
+
+/* All privacy-policy text */
+
+.contentBox .info {
+    width: 100%;
+    text-align: left;
+
+    color: #444444;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Section headings */
+
+.contentBox .info h2 {
+    margin: 45px 0 10px;
+
+    color: #333333;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Lists */
+
+.contentBox .info ol,
+.contentBox .info ul {
+    margin: 15px 0;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.contentBox .info li {
+    margin-bottom: 8px;
+}
+
+/* =========================
+   GO BACK BUTTON
+========================= */
+
+.contentBox > .cta-button {
+    display: flex;
+
+    width: 150px;
+    height: 48px;
+
+    margin: 50px auto 0;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+
+    background: #f77f9f;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.contentBox > .cta-button:hover {
+    background: #f46f93;
+    transform: translateY(-2px);
+}
 
         /* =========================================
            TABLET
