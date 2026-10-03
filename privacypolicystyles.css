@@ -203,35 +203,34 @@
 ========================= */
 
 .contentBox > .cta-button {
-    display: flex;
+            display: flex;
 
-    width: 150px;
-    height: 48px;
+            align-items: center;
+            justify-content: center;
 
-    margin: 50px auto 0;
+            width: 150px;
+            height: 59px;
 
-    align-items: center;
-    justify-content: center;
+            border-radius: 50px;
 
-    border-radius: 30px;
+            background: #f78da7;
 
-    background: #f78da7;
-    color: #ffffff;
+            color: #ffffff;
 
-    font-size: 13px;
-    font-weight: 400;
+            font-size: 18px;
+            font-weight: 400;
 
-    text-decoration: none;
+            transition:
+                background-color 0.2s ease,
+                transform 0.2s ease;
+        }
 
-    transition:
-        background-color 0.2s ease,
-        transform 0.2s ease;
-}
+        .cta-button:hover {
+            background: #f46f93;
+            transform: translateY(-2px);
+        }
 
-.contentBox > .cta-button:hover {
-    background: #f46f93;
-    transform: translateY(-2px);
-}
+
 
         /* =========================================
            TABLET
