@@ -298,6 +298,31 @@
                 height: 40px;
                 font-size: 12px;
             }
+
+            #full-info {
+                padding: 50px 20px;
+            }
+        
+            .contentBox > h1 {
+                font-size: 26px;
+            }
+        
+            .contentBox .info {
+                font-size: 12px;
+                line-height: 1.7;
+            }
+        
+            .contentBox .info h2 {
+                font-size: 18px;
+                margin-top: 35px;
+            }
+        
+            .contentBox > .cta-button {
+                width: 125px;
+                height: 42px;
+                font-size: 11px;
+                margin-top: 40px;
+            }
         }
 
 
@@ -319,4 +344,29 @@
                 margin-top: 32px;
                 font-size: 21px;
             }
-        }
+
+            #full-info {
+                padding: 50px 20px;
+            }
+        
+            .contentBox > h1 {
+                font-size: 26px;
+            }
+        
+            .contentBox .info {
+                font-size: 12px;
+                line-height: 1.7;
+            }
+        
+            .contentBox .info h2 {
+                font-size: 18px;
+                margin-top: 35px;
+            }
+        
+            .contentBox > .cta-button {
+                width: 125px;
+                height: 42px;
+                font-size: 11px;
+                margin-top: 40px;
+            }
+}
