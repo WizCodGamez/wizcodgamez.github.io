@@ -123,6 +123,15 @@
             transform: translateY(-2px);
         }
 
+        .contentBox{
+            width: 100%;
+            background: #ffffff;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: left-align;
+        }
+
 
         /* =========================================
            TABLET
