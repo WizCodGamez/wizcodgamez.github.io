@@ -91,23 +91,6 @@
             letter-spacing: -0.5px;
         }
 
-
-        /* =========================================
-           SUBTITLE
-        ========================================= */
-
-        .subtitle {
-            margin: 0 0 30px;
-
-            color: #333333;
-
-            font-size: 18px;
-            font-weight: 400;
-
-            line-height: 1.5;
-        }
-
-
         /* =========================================
            BUTTON
         ========================================= */
@@ -142,244 +125,6 @@
 
 
         /* =========================================
-           NAVIGATION
-        ========================================= */
-
-        .navigation {
-            display: flex;
-
-            align-items: center;
-            justify-content: center;
-
-            gap: 27px;
-
-            margin-top: 30px;
-        }
-
-        .navigation a {
-            color: #f78da7;
-
-            font-size: 18px;
-            font-weight: 400;
-
-            line-height: 1;
-
-            transition: opacity 0.2s ease;
-        }
-
-        .navigation a:hover {
-            opacity: 0.7;
-        }
-
-
-        /* =========================================
-           GAMES ARROW
-        ========================================= */
-
-        .games-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-        }
-
-        .arrow {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-        }
-
-
-        /* =========================
-           GAMES SECTION
-        ========================= */
-        
-        .games-section {
-            width: 100%;
-            padding: 110px 8%;
-            background: #ffffff;
-        }
-        
-        
-        /* Section heading */
-        
-        .games-header {
-            text-align: center;
-            margin-bottom: 55px;
-        }
-        
-        .games-header h2 {
-            margin: 0 0 12px;
-            color: #333333;
-            font-family: "Poppins", sans-serif;
-            font-size: 34px;
-            font-weight: 400;
-        }
-        
-        .games-header p {
-            margin: 0;
-            color: #666666;
-            font-family: "Poppins", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        /* =========================
-           GAME GRID
-        ========================= */
-        
-        .games-grid {
-            width: 100%;
-            max-width: 1100px;
-            margin: 0 auto;
-        
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 35px;
-        }
-        
-        
-        /* =========================
-           GAME CARD
-        ========================= */
-        
-        .game-card {
-            overflow: hidden;
-        
-            background: #ffffff;
-        
-            border-radius: 18px;
-        
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-        
-            transition:
-                transform 0.25s ease,
-                box-shadow 0.25s ease;
-        }
-        
-        .game-card:hover {
-            transform: translateY(-6px);
-        
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
-        }
-        
-        
-        /* =========================
-           GAME IMAGE
-        ========================= */
-        
-        .game-image {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-        
-            overflow: hidden;
-        }
-        
-        .game-image img {
-            width: 100%;
-            height: 100%;
-        
-            display: block;
-        
-            object-fit: cover;
-        
-            transition: transform 0.35s ease;
-        }
-        
-        .game-card:hover .game-image img {
-            transform: scale(1.04);
-        }
-        
-        
-        /* =========================
-           GAME INFORMATION
-        ========================= */
-        
-        .game-info {
-            padding: 25px 27px 27px;
-        }
-        
-        .game-info h3 {
-            margin: 0 0 7px;
-        
-            color: #333333;
-        
-            font-family: "Poppins", sans-serif;
-            font-size: 21px;
-            font-weight: 500;
-        }
-        
-        .game-info p {
-            margin: 0 0 22px;
-        
-            color: #888888;
-        
-            font-family: "Poppins", sans-serif;
-            font-size: 12px;
-        }
-        
-        
-        /* =========================
-           BOTTOM ROW
-        ========================= */
-        
-        .game-bottom {
-            display: flex;
-        
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        
-        /* Free */
-        
-        .game-price {
-            color: #f77f9f;
-        
-            font-family: "Poppins", sans-serif;
-            font-size: 13px;
-            font-weight: 500;
-        }
-        
-        
-        /* Button */
-        
-        .game-button {
-            display: inline-flex;
-        
-            align-items: center;
-            justify-content: center;
-        
-            min-width: 95px;
-            height: 36px;
-        
-            padding: 0 18px;
-        
-            border-radius: 25px;
-        
-            background: #f77f9f;
-        
-            color: #ffffff;
-        
-            font-family: "Poppins", sans-serif;
-            font-size: 11px;
-            font-weight: 400;
-        
-            text-decoration: none;
-        
-            transition:
-                background-color 0.2s ease,
-                transform 0.2s ease;
-        }
-        
-        .game-button:hover {
-            background: #f46f93;
-            transform: translateY(-2px);
-        }
-
-
-
-        /* =========================================
            TABLET
         ========================================= */
 
@@ -402,46 +147,10 @@
                 font-size: 30px;
             }
 
-            .subtitle {
-                font-size: 13px;
-            }
-
             .cta-button {
                 width: 115px;
                 height: 44px;
                 font-size: 13px;
-            }
-
-            .navigation {
-                gap: 20px;
-            }
-
-            .navigation a {
-                font-size: 12px;
-            }
-
-           .games-section {
-                padding: 90px 6%;
-            }
-        
-            .games-header {
-                margin-bottom: 45px;
-            }
-        
-            .games-header h2 {
-                font-size: 30px;
-            }
-        
-            .games-grid {
-                gap: 25px;
-            }
-        
-            .game-info {
-                padding: 21px;
-            }
-        
-            .game-info h3 {
-                font-size: 18px;
             }
         }
 
@@ -475,85 +184,10 @@
                 line-height: 1.25;
             }
 
-            .subtitle {
-                margin-bottom: 17px;
-                font-size: 16px;
-            }
-
             .cta-button {
                 width: 120px;
                 height: 40px;
                 font-size: 12px;
-            }
-
-            .navigation {
-                gap: 12px;
-                margin-top: 17px;
-                padding: 0 10px;
-            }
-
-            .navigation a {
-                font-size: 16px;
-            }
-
-            .games-link {
-                gap: 2px;
-            }
-
-            .arrow {
-                font-size: 8px;
-            }
-
-            .games-section {
-                padding: 70px 20px;
-            }
-        
-            .games-header {
-                margin-bottom: 30px;
-            }
-        
-            .games-header h2 {
-                font-size: 23px;
-            }
-        
-            .games-header p {
-                font-size: 9px;
-            }
-        
-            .games-grid {
-                grid-template-columns: 1fr;
-                gap: 22px;
-            }
-        
-            .game-card {
-                border-radius: 13px;
-            }
-        
-            .game-info {
-                padding: 17px;
-            }
-        
-            .game-info h3 {
-                margin-bottom: 5px;
-                font-size: 16px;
-            }
-        
-            .game-info p {
-                margin-bottom: 16px;
-                font-size: 9px;
-            }
-        
-            .game-price {
-                font-size: 10px;
-            }
-        
-            .game-button {
-                min-width: 75px;
-                height: 29px;
-        
-                padding: 0 13px;
-        
-                font-size: 8px;
             }
         }
 
@@ -575,13 +209,5 @@
             .hero h1 {
                 margin-top: 32px;
                 font-size: 21px;
-            }
-
-            .navigation {
-                gap: 9px;
-            }
-
-            .navigation a {
-                font-size: 6.5px;
             }
         }
