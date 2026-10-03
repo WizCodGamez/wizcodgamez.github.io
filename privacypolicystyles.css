@@ -145,7 +145,7 @@
 
 .contentBox > h1 {
     text-align: left;
-    color: #f46f93;
+    color: #f78da7;
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -156,7 +156,7 @@
 
 .contentBox hr {
     border: 0;
-    border-top: 1px solid #f46f93;
+    border-top: 1px solid #f78da7;
     margin: 15px 0 25px;
 }
 
@@ -168,7 +168,7 @@
 
     color: #444444;
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.8;
 }
@@ -178,7 +178,7 @@
 .contentBox .info h2 {
     margin: 45px 0 10px;
 
-    color: #f46f93;
+    color: #f78da7;
     font-family: "Poppins", sans-serif;
     font-size: 22px;
     font-weight: 500;
@@ -215,7 +215,7 @@
 
     border-radius: 30px;
 
-    background: #f77f9f;
+    background: #f78da7;
     color: #ffffff;
 
     font-size: 13px;
