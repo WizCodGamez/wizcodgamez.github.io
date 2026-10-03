@@ -164,7 +164,7 @@
 
 .contentBox .info {
     width: 100%;
-    text-align: left;
+    text-align: justify;
 
     color: #444444;
     font-family: "Poppins", sans-serif;
@@ -263,7 +263,7 @@
             }
             .contentBox .info {
                 width: 100%;
-                text-align: left;                
+                text-align: justify;                
                 color: #444444;
                 font-family: "Poppins", sans-serif;
                 font-size: 18px;
@@ -318,7 +318,7 @@
         
             .contentBox .info {
                     width: 100%;
-                    text-align: left;
+                    text-align: justify;
                     color: #444444;
                     font-family: "Poppins", sans-serif;
                     font-size: 18px;
@@ -369,7 +369,7 @@
         
             .contentBox .info {
                     width: 100%;
-                    text-align: left;
+                    text-align: justify;
                 
                     color: #444444;
                     font-family: "Poppins", sans-serif;
