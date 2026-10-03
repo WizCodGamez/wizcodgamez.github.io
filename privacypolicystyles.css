@@ -1,881 +1,587 @@
-@font-face {
-    font-family: "Amsterdam Four";
-    src: url('Amsterdam Four_ttf_400.ttf');
-    src: url('Amsterdam Four_ttf_400.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-}
-
-a:link { text-decoration: none; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:active { text-decoration: none; }
-
-body
-{
-    background-color: #ffffff;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar
-{
-    width: 8px;
-}
-::-webkit-scrollbar-track
-{
-    background-color: #ffffff;
-}
-::-webkit-scrollbar-thumb
-{
-    background-color: #f78da7;
-    border-radius: 0px;
-}
-
-#progresss
-{
-    cursor: pointer;
-    position: fixed;
-    bottom: 150px;
-    right:10px;
-    height: 70px;
-    width: 70px;
-    display: none;
-    place-items: center;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #f78da7;
-    z-index: 2;
-}
-#progresss-value
-{
-    cursor: pointer;
-    display: block;
-    height: calc(100% - 10px);
-    width: calc(100% - 10px);
-    background-color: #fff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 35px;
-    color: #f78da7;
-    z-index: 2;
-}
-#progresss:hover
-{
-    cursor: pointer;
-    position: fixed;
-    bottom: 150px;
-    right:10px;
-    height: 70px;
-    width: 70px;
-    display: none;
-    place-items: center;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #ff245b;
-    transition: all .3s ease-in-out 0s;
-    z-index: 2;
-}
-
-header
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 7px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /*background-color: #ffffff;*/
-    transition: 0.5s;
-    z-index: 1000;
-    background-color: #fff;
-}
-
-header.sticky
-{
-    background-color: #ffffff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-header .logo
-{
-    position: relative;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 300;
-    font-family: "Amsterdam Four", sans-serif;
-    white-space: nowrap;
-}
-
-header .nav
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul li
-{
-    list-style: none;
-    margin: 10px;
-}
-
-header ul li a
-{
-    color: #f78da7;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    white-space: nowrap;
-}
-
-header ul li a:hover
-{
-    background: #f78da7;
-    color: #ffffff;
-    box-shadow: 0 0 10px #f78da7;
-    border-radius: 50px;
-}
-
-header .action .searchBx
-{
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-header .action .searchBx ::placeholder
-{
-    color: #626262;
-}
-
-header .action .searchBx i
-{
-    font-size: 2em;
-    margin: 5px;
-    color: #f78da7;
-}
-
-
-header .action .searchBx input
-{
-    outline: none;
-    border: none;
-    font-size: 1em;
-    color: #f78da7;
-    text-decoration: underline;
-    text-underline-offset: 5px;
-    background-color: transparent;
-}
-
-/* Home Banner */
-
-.banner
-{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 0px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.banner .bg
-{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.banner .bg .content
-{
-    width: 50%;
-    height: 100%;
-}
-
-.banner .bg .content h2
-{
-    font-size: 3em;
-    color: #000000;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-family: 'Poppins', sans-serif;
-    white-space: nowrap;
-}
-
-.banner .bg .content p
-{
-    font-size: 1em;
-    color: #000000;
-    letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.banner .bg .content a
-{
-    display: inline-block;
-    padding: 17px 30px;
-    margin: 20px 0px;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 50px;
-    height: 60px;
-    color: #f78da7;
-    background-color: #fff;
-    border: 1px solid #f78da7;
-    letter-spacing: 1px;
-    transition: all .3s ease-in-out 0s;
-    font-family: 'Poppins', sans-serif;
-}
-
-.banner .bg .content a:hover
-{
-    padding: 17px 30px;
-    margin: 20px 0px;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 50px;
-    height: 60px;
-    color: #fff;
-    letter-spacing: 1px;
-    background-color: #f78da7;
-    box-shadow: 0 0 20px #f78da7;
-    border: 1px solid #f78da7;
-    transition: all .3s ease-in-out 0s;
-    font-family: 'Poppins', sans-serif;
-}
-
-.banner .bg img
-{
-    width: 600px;
-}
-
-
-
-/* Privacy Section */
-
-.privacy
-{
-    position: relative;
-    width: 100%;
-    min-height: 75vh;
-    padding: 0px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: justify;
-}
-
-.privacy .contentBx
-{
-    width: 100%;
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
-.privacy .contentBx h1
-{
-    font-size: 2.5em;
-    font-weight: 500;
-    color: #f78da7;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.privacy .contentBx h2
-{
-    font-size: 1.2em;
-    font-weight: normal;
-    color: #f78da7;
-    margin-bottom: 5px;
-    margin-top: 80px;
-}
-
-.privacy .contentBx hr
-{
-    border: 0.5px solid #f78da7;
-    border-radius: 0px;
-}
-
-.privacy .contentBx .info
-{
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.privacy .contentBx .info li
-{
-    margin-left: 65px;
-}
-
-.privacy .contentBx a
-{
-    padding: 17px 30px;
-    margin: 60px 0;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 50px;
-    height: 60px;
-    color: #f78da7;
-    background-color: #fff;
-    border: 1px solid #f78da7;
-    letter-spacing: 1px;
-    transition: all .3s ease-in-out 0s;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-}
-
-.privacy .contentBx a:hover
-{
-    padding: 17px 30px;
-    margin: 60px 0;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 50px;
-    height: 60px;
-    color: #fff;
-    background-color: #f78da7;
-    border: 1px solid #f78da7;
-    letter-spacing: 1px;
-    transition: all .3s ease-in-out 0s;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
-}
-
-/* Footer Section */
-
-footer
-{
-    padding: 10px 100px;
-    transition: 0.5s;
-    z-index: 1000;
-    background-color: #ffffff;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
-}
-
-footer .info
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer .info .logo
-{
-    position: relative;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: 300;
-    font-family: "Amsterdam Four", sans-serif;
-    white-space: nowrap;
-}
-
-footer .info p
-{
-    color:  rgb(0, 0, 0);
-}
-
-footer .info ul
-{
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-footer .info ul li
-{
-    list-style: none;
-    height: 50px;
-    width: 50px;
-    margin: 5px 10px;
-    border-radius: 50%;
-    border: 1px solid #f78da7;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-footer .info ul li:hover
-{
-    background-color: #f78da7;
-    border: none;
-    box-shadow: 0 0 10px #f78da7;
-    transform: scale(1.25);
-    transition-duration: 0.5s;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-footer .info ul li a i
-{
-    font-size: 1.5em;
-    color:#f78da7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-footer .info ul li:hover a i
-{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.animeP
-{
-    position: relative;
-    transform: translateY(120px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-.animeP.active
-{
-    transform: translateY(100px);
-    opacity: 1;
-}
-
-/* Responsive Design */
-
-@media (max-width: 991px)
-{
-
-    /* Scroll to top */
-    #progresss
-    {
-        cursor: pointer;
-        position: fixed;
-        bottom: 170px;
-        right:10px;
-        height: 50px;
-        width: 50px;
-        display: none;
-        place-items: center;
-        border-radius: 50%;
-        box-shadow: 0 0 20px #f78da7;
-        z-index: 2;
-    }
-    #progresss-value
-    {
-        cursor: pointer;
-        display: block;
-        height: calc(100% - 4px);
-        width: calc(100% - 4px);
-        background-color: #fff;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        font-size: 35px;
-        color: #f78da7;
-        z-index: 2;
-    }
-    #progresss:hover
-    {
-        cursor: pointer;
-        position: fixed;
-        bottom: 170px;
-        right:10px;
-        height: 50px;
-        width: 50px;
-        display: none;
-        place-items: center;
-        border-radius: 50%;
-        box-shadow: 0 0 20px #ff245b;
-        z-index: 2;
-    }
-    #progresss-value i
-    {
-        font-size: 7vw;
-    }
-
-    /* Header Section */
-    header
-    {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 5vw 5vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        transition: 0.5s;
-        z-index: 1000;
-        background-color: #fff;
-    }
-    header .logo
-    {
-        position: relative;
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-size: 4vw;
-        font-weight: 300;
-        font-family: "Amsterdam Four", sans-serif;
-        white-space: nowrap;
-    }
-    header .nav
-    {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        background-color: #fff;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        z-index: 1000;
-    }
-    header .nav.active
-    {
-        display: flex;
-    }
-    header .nav li
-    {
-        margin: 20px 0;
-    }
-    header .nav li a
-    {
-        font-size: 24px;
-        margin: 10px 0;
-    }
-    header .action .searchBx
-    {
-        padding: 1vw;
-        margin: 1vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border-radius: 5px;
-    }
-    header .action .searchBx ::placeholder
-    {
-        color: #626262;
-    }
-
-    header .action .searchBx i
-    {
-        font-size: 5vw;
-        margin: 5px;
-        color: #f78da7;
-    }
-
-    header .action .searchBx input
-    {
-        outline: none;
-        border: none;
-        font-size: 3vw;
-        color: #f78da7;
-        background-color: transparent;
-        text-decoration: underline;
-        text-underline-offset: 5px;
-    }
-    .toggleMenu
-    {
-        position: relative;
-        width: 50px;
-        height: 50px;
-        background-image: url(menu.png);
-        background-position: center;
-        background-size: 10vw;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        z-index: 1001;
-    }
-    .toggleMenu.active
-    {
-        background-image: url(close.png);
-        width: 50px;
-        height: 50px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 10vw;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    /* Banner Sections */
-    .banner
-    {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        min-height: 75vh;
-        padding: 0px 5vw;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .banner .bg img
-    {
-        position: absolute;
-        width: 70vw;
-        height: auto;
-        margin-bottom: 65vw;
-        margin-top: 20vw;
-    }
-    .banner .bg .content
-    {
-        width: 100%;
-        height: 100%;
-        background-color: none;
-        padding: 20px;
-        z-index: 1;
-        border-radius: 10px;
-    }
-    .banner .bg .content h2 {
-        font-size: 5vw;
-        color: #000000;
-        letter-spacing: 1px;
-        font-weight: 300;
-        font-family: Poppins;
-        white-space: nowrap;
-        text-align: center;
-        margin-top: 30vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner .bg .content p {
-        font-size: 2vw;
-        color: #000000;
-        letter-spacing: 1px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        white-space: nowrap;
-    }
-    .banner .bg .content a {
-        font-size: 3vw;
-        padding: 3vw 5vw;
-        margin: 20px auto;
-        text-decoration: none;
-        font-weight: 300;
-        border-radius: 50px;
-        height: auto;
-        color: #f78da7;
-        background-color: #fff;
-        border: 1px solid #f78da7;
-        letter-spacing: 1px;
-        transition: all .3s ease-in-out 0s;
-        white-space: nowrap;
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .banner .bg .content a:hover
-    {
-        font-size: 3vw;
-        padding: 3vw 5vw;
-        margin: 20px auto;
-        text-decoration: none;
-        font-weight: 300;
-        border-radius: 50px;
-        height: auto;
-        color: #fff;
-        background-color: #f78da7;
-        letter-spacing: 1px;
-        transition: all .3s ease-in-out 0s;
-        white-space: nowrap;
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Main Privacy Policy */
-    .privacy
-    {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        min-height: 75vh;
-        padding: 0px 10vw;
-        justify-content: space-between;
-        align-items: center;
-        text-align: justify;
-    }
-    .privacy .contentBx
-    {
-        width: 100%;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-    .privacy .contentBx h1
-    {
-        font-size: 5vw;
-        font-weight: 500;
-    }
-    .privacy .contentBx h2
-    {
-        font-size: 4vw;
-        margin-bottom: 1vw;
-        margin-top: 10vw;
-    }
-    .privacy .contentBx .info
-    {
-        font-size: 4vw;
-    }
-    .privacy .contentBx .info li
-    {
-        margin-left: 5vw;
-    }
- 
-    .privacy .contentBx a {
-        font-size: 3vw;
-        padding: 3vw 5vw;
-        margin: 20px auto;
-        text-decoration: none;
-        font-weight: 300;
-        border-radius: 50px;
-        height: auto;
-        color: #f78da7;
-        background-color: #fff;
-        border: 1px solid #f78da7;
-        letter-spacing: 1px;
-        transition: all .3s ease-in-out 0s;
-        white-space: nowrap;
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .privacy .contentBx a:hover
-    {
-        font-size: 3vw;
-        padding: 3vw 5vw;
-        margin: 20px auto;
-        text-decoration: none;
-        font-weight: 300;
-        border-radius: 50px;
-        height: auto;
-        color: #fff;
-        background-color: #f78da7;
-        letter-spacing: 1px;
-        transition: all .3s ease-in-out 0s;
-        white-space: nowrap;
-        width: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    /* Footer Section */
-
-    footer .info
-    {
-        flex-direction: column;
-    }
-    footer .info .logo
-    {
-        white-space: nowrap;
-        font-size: 4vw;
-    }
-    footer .info p
-    {
-        white-space: nowrap;
-        font-size: 2vw;
-    }
-    footer .info ul
-    {
-        margin: 10px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer .info ul li
-    {
-        list-style: none;
-        height: 10vw;
-        width: 10vw;
-        margin: 3vw 3vw;
-        border-radius: 50vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid #f78da7;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    footer .info ul li:hover
-    {
-        background-color: #f78da7;
-        border: none;
-        height: 10vw;
-        width: 10vw;
-        border-radius: 50vw;
-        box-shadow: 0 0 10px #f78da7;
-        transform: scale(1.25);
-        transition-duration: 0.5s;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    footer .info ul li a i
-    {
-        font-size: 5vw;
-        color:#f78da7;
-        display:flex;
-        list-style: none;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    footer .info ul li:hover a i
-    {
-        font-size: 5vw;
-        color: #fff;
-        display:flex;
-        list-style: none;
-        text-decoration: none;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-}
+        /* =========================================
+           RESET
+        ========================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: #333333;
+            font-family: "Poppins", sans-serif;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+            width: 100%;
+            min-height: 720px;
+
+            background: #ffffff;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            text-align: center;
+        }
+
+
+        /* =========================================
+           HERO CONTENT
+        ========================================= */
+
+        .hero-content {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 108px;
+        }
+
+
+        /* =========================================
+           LOGO
+        ========================================= */
+
+        .logo-link {
+            display: block;
+            line-height: 0;
+        }
+
+        .logo {
+            width: 600px;
+            height: auto;
+            display: block;
+        }
+
+
+        /* =========================================
+           HEADING
+        ========================================= */
+
+        .hero h1 {
+            margin-top: 30px;
+            margin-bottom: 23px;
+
+            color: #333333;
+
+            font-size: 48px;
+            font-weight: 400;
+
+            line-height: 1.25;
+            letter-spacing: -0.5px;
+        }
+
+
+        /* =========================================
+           SUBTITLE
+        ========================================= */
+
+        .subtitle {
+            margin: 0 0 30px;
+
+            color: #333333;
+
+            font-size: 18px;
+            font-weight: 400;
+
+            line-height: 1.5;
+        }
+
+
+        /* =========================================
+           BUTTON
+        ========================================= */
+
+        .cta-button {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            width: 160px;
+            height: 59px;
+
+            border-radius: 50px;
+
+            background: #f78da7;
+
+            color: #ffffff;
+
+            font-size: 18px;
+            font-weight: 400;
+
+            transition:
+                background-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: #f46f93;
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================================
+           NAVIGATION
+        ========================================= */
+
+        .navigation {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            gap: 27px;
+
+            margin-top: 30px;
+        }
+
+        .navigation a {
+            color: #f78da7;
+
+            font-size: 18px;
+            font-weight: 400;
+
+            line-height: 1;
+
+            transition: opacity 0.2s ease;
+        }
+
+        .navigation a:hover {
+            opacity: 0.7;
+        }
+
+
+        /* =========================================
+           GAMES ARROW
+        ========================================= */
+
+        .games-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .arrow {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           GAMES SECTION
+        ========================= */
+        
+        .games-section {
+            width: 100%;
+            padding: 110px 8%;
+            background: #ffffff;
+        }
+        
+        
+        /* Section heading */
+        
+        .games-header {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+        
+        .games-header h2 {
+            margin: 0 0 12px;
+            color: #333333;
+            font-family: "Poppins", sans-serif;
+            font-size: 34px;
+            font-weight: 400;
+        }
+        
+        .games-header p {
+            margin: 0;
+            color: #666666;
+            font-family: "Poppins", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        /* =========================
+           GAME GRID
+        ========================= */
+        
+        .games-grid {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+        
+        
+        /* =========================
+           GAME CARD
+        ========================= */
+        
+        .game-card {
+            overflow: hidden;
+        
+            background: #ffffff;
+        
+            border-radius: 18px;
+        
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-6px);
+        
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+        
+        
+        /* =========================
+           GAME IMAGE
+        ========================= */
+        
+        .game-image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        
+            overflow: hidden;
+        }
+        
+        .game-image img {
+            width: 100%;
+            height: 100%;
+        
+            display: block;
+        
+            object-fit: cover;
+        
+            transition: transform 0.35s ease;
+        }
+        
+        .game-card:hover .game-image img {
+            transform: scale(1.04);
+        }
+        
+        
+        /* =========================
+           GAME INFORMATION
+        ========================= */
+        
+        .game-info {
+            padding: 25px 27px 27px;
+        }
+        
+        .game-info h3 {
+            margin: 0 0 7px;
+        
+            color: #333333;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 21px;
+            font-weight: 500;
+        }
+        
+        .game-info p {
+            margin: 0 0 22px;
+        
+            color: #888888;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+        }
+        
+        
+        /* =========================
+           BOTTOM ROW
+        ========================= */
+        
+        .game-bottom {
+            display: flex;
+        
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        
+        /* Free */
+        
+        .game-price {
+            color: #f77f9f;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        
+        
+        /* Button */
+        
+        .game-button {
+            display: inline-flex;
+        
+            align-items: center;
+            justify-content: center;
+        
+            min-width: 95px;
+            height: 36px;
+        
+            padding: 0 18px;
+        
+            border-radius: 25px;
+        
+            background: #f77f9f;
+        
+            color: #ffffff;
+        
+            font-family: "Poppins", sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+        
+            text-decoration: none;
+        
+            transition:
+                background-color 0.2s ease,
+                transform 0.2s ease;
+        }
+        
+        .game-button:hover {
+            background: #f46f93;
+            transform: translateY(-2px);
+        }
+
+
+
+        /* =========================================
+           TABLET
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .hero {
+                min-height: 650px;
+            }
+
+            .hero-content {
+                padding-top: 80px;
+            }
+
+            .logo {
+                width: 330px;
+            }
+
+            .hero h1 {
+                margin-top: 50px;
+                font-size: 30px;
+            }
+
+            .subtitle {
+                font-size: 13px;
+            }
+
+            .cta-button {
+                width: 115px;
+                height: 44px;
+                font-size: 13px;
+            }
+
+            .navigation {
+                gap: 20px;
+            }
+
+            .navigation a {
+                font-size: 12px;
+            }
+
+           .games-section {
+                padding: 90px 6%;
+            }
+        
+            .games-header {
+                margin-bottom: 45px;
+            }
+        
+            .games-header h2 {
+                font-size: 30px;
+            }
+        
+            .games-grid {
+                gap: 25px;
+            }
+        
+            .game-info {
+                padding: 21px;
+            }
+        
+            .game-info h3 {
+                font-size: 18px;
+            }
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 600px) {
+
+            .hero {
+                min-height: 100vh;
+                min-height: 100svh;
+            }
+
+            .hero-content {
+                padding-top: 70px;
+            }
+
+            .logo {
+                width: 350px;
+            }
+
+            .hero h1 {
+                margin-top: 38px;
+                margin-bottom: 14px;
+
+                padding: 0 20px;
+
+                font-size: 28px;
+                line-height: 1.25;
+            }
+
+            .subtitle {
+                margin-bottom: 17px;
+                font-size: 16px;
+            }
+
+            .cta-button {
+                width: 120px;
+                height: 40px;
+                font-size: 12px;
+            }
+
+            .navigation {
+                gap: 12px;
+                margin-top: 17px;
+                padding: 0 10px;
+            }
+
+            .navigation a {
+                font-size: 16px;
+            }
+
+            .games-link {
+                gap: 2px;
+            }
+
+            .arrow {
+                font-size: 8px;
+            }
+
+            .games-section {
+                padding: 70px 20px;
+            }
+        
+            .games-header {
+                margin-bottom: 30px;
+            }
+        
+            .games-header h2 {
+                font-size: 23px;
+            }
+        
+            .games-header p {
+                font-size: 9px;
+            }
+        
+            .games-grid {
+                grid-template-columns: 1fr;
+                gap: 22px;
+            }
+        
+            .game-card {
+                border-radius: 13px;
+            }
+        
+            .game-info {
+                padding: 17px;
+            }
+        
+            .game-info h3 {
+                margin-bottom: 5px;
+                font-size: 16px;
+            }
+        
+            .game-info p {
+                margin-bottom: 16px;
+                font-size: 9px;
+            }
+        
+            .game-price {
+                font-size: 10px;
+            }
+        
+            .game-button {
+                min-width: 75px;
+                height: 29px;
+        
+                padding: 0 13px;
+        
+                font-size: 8px;
+            }
+        }
+
+
+        /* =========================================
+           SMALL PHONES
+        ========================================= */
+
+        @media (max-width: 380px) {
+
+            .hero-content {
+                padding-top: 55px;
+            }
+
+            .logo {
+                width: 300px;
+            }
+
+            .hero h1 {
+                margin-top: 32px;
+                font-size: 21px;
+            }
+
+            .navigation {
+                gap: 9px;
+            }
+
+            .navigation a {
+                font-size: 6.5px;
+            }
+        }
